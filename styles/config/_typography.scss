@@ -1,27 +1,39 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 
-// $name: name of the font family (var(--font-monsterrat) and var(--font-source-sans))
+// $name: name of the font family (var(--font-red-hat-display), var(--font-red-hat-text))
 // $size: size of the font (xxs, xs, sm, md, lg, xl, xxl, xxxl)
 // $weight: weight of the font (light, regular, medium, semi-bold, bold)
 
-$font-families: ("montserrat", "source-sans");
+$font-families: ("red-hat-display", "red-hat-text");
 
 $font-sizes: ("xxs", "xs", "sm", "s", "md", "lg", "xl", "xxl", "xxxl");
 
 $font-weights: ("light", "regular", "medium", "semi-bold", "bold");
 
-@mixin typography($name: "Montserrat", $size: "md", $weight: "regular") {
+@mixin typography($name: "Red Hat Display", $size: "md", $weight: "regular") {
 	color: var(--black);
 	// font families
 
-	@if $name == "Montserrat" or $name == "montserrat" or $name == "m" {
-		font-family: var(--font-montserrat);
-	} @else if $name == "Source Sans" or $name == "source-sans" or $name == "s"
+	@if $name ==
+		"Red Hat Display" or
+		$name ==
+		"red-hat-display" or
+		$name ==
+		"rhd"
 	{
-		font-family: var(--font-source-sans);
+		font-family: var(--font-red-hat-display);
+	} @else if
+		$name ==
+		"Red Hat Text" or
+		$name ==
+		"red-hat-text" or
+		$name ==
+		"rht"
+	{
+		font-family: var(--font-red-hat-text);
 	} @else {
-		font-family: var(--font-montserrat);
+		font-family: var(--font-red-hat-display);
 	}
 
 	// font sizes

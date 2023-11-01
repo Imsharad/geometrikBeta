@@ -7,7 +7,7 @@ const classes = stylesConfig(styles, "typography");
 
 const Typography: React.FC<TypographyProps> = ({
 	children,
-	family = "montserrat",
+	family = "red-hat-text",
 	size = "md",
 	weight = "regular",
 	as = "span",

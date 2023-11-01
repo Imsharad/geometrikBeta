@@ -2,7 +2,7 @@ import React from "react";
 
 // All the font definitions can be found in @/styles/config/_typography.scss
 
-export type FontFamily = "montserrat" | "source-sans";
+export type FontFamily = "red-hat-display" | "red-hat-text";
 
 export type FontSize =
 	| "xxs"
