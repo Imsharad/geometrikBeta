@@ -1,0 +1,171 @@
+@import "@/styles/config/mixins";
+@import "@/styles/config/variables";
+@import "@/styles/config/typography";
+
+.btn {
+	all: unset;
+	box-sizing: border-box;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	gap: 6px;
+	border-radius: 500px;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	flex: 0 0 auto;
+	cursor: pointer;
+	user-select: none;
+	transition: all 0.2s ease-in-out;
+
+	&--size {
+		&--small {
+			padding: 8px 16px;
+			@include typography(source-sans, xs, semi-bold);
+		}
+
+		&--medium {
+			padding: 13px 24px;
+			@include typography(source-sans, xs, semi-bold);
+		}
+
+		&--large {
+			padding: 20px 40px;
+			@include typography(source-sans, xs, semi-bold);
+		}
+	}
+
+	&--theme {
+		&--filled {
+			background: linear-gradient(
+				79deg,
+				$theme-secondary -10.25%,
+				$theme-primary 108.1%
+			);
+			color: $theme-white;
+
+			&:hover,
+			&:active,
+			&:focus {
+				background: linear-gradient(
+					130deg,
+					$theme-secondary -10.25%,
+					$theme-primary 108.1%
+				);
+			}
+
+			&:disabled {
+				background: linear-gradient(
+					79deg,
+					$theme-secondary -10.25%,
+					$theme-primary 108.1%
+				);
+			}
+		}
+
+		&--outlined {
+			background: transparent;
+			color: $theme-white;
+			border: 1px solid $theme-white;
+		}
+	}
+
+	&__icon {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+
+		svg path {
+			@include theme(light) {
+				filter: invert(0);
+			}
+
+			@include theme(dark) {
+				filter: invert(1);
+			}
+		}
+	}
+
+	&--size {
+		&--medium {
+			.btn__icon {
+				svg,
+				img {
+					width: 20px;
+					height: 20px;
+				}
+			}
+		}
+
+		&--small {
+			.btn__icon {
+				svg,
+				img {
+					width: 16px;
+					height: 16px;
+				}
+			}
+		}
+
+		&--large {
+			.btn__icon {
+				svg,
+				img {
+					width: 20px;
+					height: 20px;
+				}
+			}
+		}
+	}
+
+	&__loader {
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		display: flex;
+		flex: 0 0 auto;
+		border: 3px solid transparent;
+		animation: spin 1s linear infinite;
+		border-right-color: var(--color-white);
+		border-bottom-color: var(--color-white);
+	}
+
+	&--size--small &__loader {
+		width: 17px;
+		height: 17px;
+	}
+
+	&--size--medium &__loader {
+		width: 19px;
+		height: 19px;
+	}
+
+	&--size--large &__loader {
+		width: 23px;
+		height: 23px;
+	}
+
+	&--theme--filled &__loader {
+		border-bottom-color: var(--theme-white);
+		border-right-color: var(--theme-white);
+	}
+
+	&--theme--outlined &__loader {
+		border-bottom-color: var(--theme-blue-dark);
+		border-right-color: var(--theme-blue-dark);
+	}
+
+	&--disabled {
+		cursor: not-allowed;
+		opacity: 0.4;
+	}
+
+	&--loading {
+		cursor: not-allowed;
+	}
+}
+
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
