@@ -1,6 +1,8 @@
 import React from "react";
 import Seo from "./Seo";
 import { frontendBaseUrl } from "@/constants/variables";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const Layout: React.FC<any> = ({ children }) => {
 	return (
@@ -47,7 +49,9 @@ const Layout: React.FC<any> = ({ children }) => {
 					siteName: "NextJS Boilerplate",
 				}}
 			/>
+			<Header />
 			{children}
+			<Footer />
 		</>
 	);
 };
