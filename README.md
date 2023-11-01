@@ -1,8 +1,8 @@
-# Next.js + TypeScript + MongoDB + Sass
+# Growthrocket
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-## Features
+## Tech Stack
 
 -   [x] Next.js
 -   [x] TypeScript
@@ -16,9 +16,24 @@
 
 ## Usage
 
-1.  Click the `Use this template` button.
-2.  Create a new repository.
-3.  Clone the repository.
+1.  Clone the repository.
+
+```sh
+git clone https://github.com/opengig/growthrocket.git
+```
+
+2.  Go to the project directory.
+
+```sh
+cd growthrocket
+```
+
+3.  Configure environment variables.
+
+```sh
+cat >.env
+```
+
 4.  Install dependencies.
 
 ```sh
@@ -53,6 +68,23 @@ yarn lint
 yarn format
 
 ```
+
+## Docker Setup
+
+1.  Download and install [Docker](https://www.docker.com/products/docker-desktop).
+2.  Go to the project directory.
+
+    ```sh
+    cd growthrocket
+    ```
+
+3.  Run the following command to start the server.
+
+    ```sh
+    yarn docker-compose:up
+    ```
+
+4.  Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## License
 
