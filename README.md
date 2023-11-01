@@ -69,6 +69,17 @@ yarn format
 
 ```
 
+## Points to Remeber
+
+1. Make sure `yarn` is being used and not any other package manager (like `npm` or `pnpm`) is being used.
+2. Your NodeJS version is `>= 14.0.0`
+3. The development branch is `dev` only, and `master` is the production branch.
+4. All branches should follow the convention, `username-feature_to_be_worked_upon`.
+5. All PRs will be raised against `dev` branch only.
+6. **Do Not** merge PRs without approval.
+7. All the tests (GitHub Actions) should be passed for the PR to be merged.
+8. Every PR title should be prefixed with its Jira ticket ID. For e.g.) `GRC-24 Added SEO optimizations`
+
 ## Docker Setup
 
 1.  Download and install [Docker](https://www.docker.com/products/docker-desktop).
