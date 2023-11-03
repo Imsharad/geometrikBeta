@@ -78,7 +78,7 @@ const HeroSection = () => {
 							<div className={classes("-heading-title-2")}>
 								<Typography
 									family="red-hat-display"
-									size="xxxl"
+									size="xxl"
 									weight="bold"
 									as="span"
 									className={classes(
@@ -89,7 +89,7 @@ const HeroSection = () => {
 								</Typography>
 								<Typography
 									family="red-hat-display"
-									size="xxxl"
+									size="xxl"
 									weight="bold"
 									as="span"
 									className={classes(
@@ -103,7 +103,7 @@ const HeroSection = () => {
 							<div className={classes("-heading-title-3")}>
 								<Typography
 									family="red-hat-display"
-									size="xxxl"
+									size="xxl"
 									weight="bold"
 									as="span"
 									className={classes("-heading-title-3-text")}
@@ -142,46 +142,46 @@ const HeroSection = () => {
 						<div className={classes("-carousal-items")}>
 							<Typography
 								family="red-hat-display"
-								size="xxxl"
+								size="xl"
 								weight="bold"
 								as="div"
-								className={classes("-carousal-item-1")}
+								className={classes("-carousal-item")}
 							>
 								ChatGPT
 							</Typography>
 							<Typography
 								family="red-hat-display"
-								size="xxxl"
+								size="xl"
 								weight="bold"
 								as="div"
-								className={classes("-carousal-item-1")}
+								className={classes("-carousal-item")}
 							>
 								LLM
 							</Typography>
 							<Typography
 								family="red-hat-display"
-								size="xxxl"
+								size="xl"
 								weight="bold"
 								as="div"
-								className={classes("-carousal-item-1")}
+								className={classes("-carousal-item")}
 							>
 								NLP
 							</Typography>
 							<Typography
 								family="red-hat-display"
-								size="xxxl"
+								size="xl"
 								weight="bold"
 								as="div"
-								className={classes("-carousal-item-1")}
+								className={classes("-carousal-item")}
 							>
 								Data Science
 							</Typography>
 							<Typography
 								family="red-hat-display"
-								size="xxxl"
+								size="xl"
 								weight="bold"
 								as="div"
-								className={classes("-carousal-item-1")}
+								className={classes("-carousal-item")}
 							>
 								Python
 							</Typography>
@@ -190,7 +190,7 @@ const HeroSection = () => {
 								size="xxxl"
 								weight="bold"
 								as="div"
-								className={classes("-carousal-item-1")}
+								className={classes("-carousal-item")}
 							>
 								UI/UX Design
 							</Typography>
