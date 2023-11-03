@@ -5,7 +5,7 @@
 	width: 100%;
 	margin: 0;
 	margin-top: 0;
-	height: 100vh;
+	// height: 170vh;
 	position: relative;
 	background-color: black;
 	color: white;
@@ -185,5 +185,20 @@
 	&-btn-arrow {
 		width: 24px;
 		height: 24px;
+	}
+
+	&-hero-hr {
+		text-align: center;
+		width: 800px;
+		margin: auto;
+		margin-top: 115px;
+		height: 1px;
+		opacity: 0.6;
+		background: linear-gradient(
+			90deg,
+			rgba(40, 193, 239, 0.01) 0%,
+			#4075f5 47.4%,
+			rgba(40, 193, 239, 0) 100%
+		);
 	}
 }
