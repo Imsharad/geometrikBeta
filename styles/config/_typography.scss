@@ -12,7 +12,7 @@ $font-sizes: ("xxs", "xs", "sm", "s", "md", "lg", "xl", "xxl", "xxxl");
 $font-weights: ("light", "regular", "medium", "semi-bold", "bold");
 
 @mixin typography($name: "Red Hat Display", $size: "md", $weight: "regular") {
-	color: var(--black);
+	color: var(--white);
 	// font families
 
 	@if $name ==
