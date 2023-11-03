@@ -49,9 +49,9 @@ const Layout: React.FC<any> = ({ children }) => {
 					siteName: "NextJS Boilerplate",
 				}}
 			/>
-			<Header />
+			{/* <Header /> */}
 			{children}
-			<Footer />
+			{/* <Footer /> */}
 		</>
 	);
 };
