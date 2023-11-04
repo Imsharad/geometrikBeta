@@ -33,6 +33,13 @@
 		// align-items: center;
 	}
 
+	&-heading-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		// align-items: center;
+	}
+
 	&-heading {
 		width: fit-content;
 		// z-index: 1;
@@ -50,6 +57,7 @@
 	&-heading-title-1-text {
 		color: var(--white);
 		font-style: normal;
+		font-size: 110px;
 		letter-spacing: 1.2px;
 		margin-left: 16px;
 	}

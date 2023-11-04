@@ -29,7 +29,7 @@ const HeroSection = () => {
 		}, 3000);
 
 		return () => clearInterval(interval);
-	}, []);
+	}, [setDomains]);
 
 	return (
 		<>
@@ -42,7 +42,7 @@ const HeroSection = () => {
 							<div className={classes("-heading-title-1")}>
 								<Typography
 									family="red-hat-display"
-									size="lg"
+									size="xxxl"
 									weight="bold"
 									as="h3"
 									className={classes("-heading-title-1-text")}
@@ -53,7 +53,7 @@ const HeroSection = () => {
 							<div className={classes("-heading-title-2")}>
 								<Typography
 									family="red-hat-display"
-									size="xxl"
+									size="xxxl"
 									weight="bold"
 									as="span"
 									className={classes(
@@ -64,7 +64,7 @@ const HeroSection = () => {
 								</Typography>
 								<Typography
 									family="red-hat-display"
-									size="xxl"
+									size="xxxl"
 									weight="bold"
 									as="span"
 									className={classes(
@@ -78,7 +78,7 @@ const HeroSection = () => {
 							<div className={classes("-heading-title-3")}>
 								<Typography
 									family="red-hat-display"
-									size="xxl"
+									size="xxxl"
 									weight="bold"
 									as="span"
 									className={classes("-heading-title-3-text")}
