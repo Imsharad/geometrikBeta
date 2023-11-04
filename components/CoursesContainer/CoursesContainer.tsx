@@ -17,6 +17,7 @@ const CoursesContainer: React.FC = () => {
 	return (
 		<>
 			<div className={classes("")}>
+				<div className={classes("-gradient-container")}></div>
 				<div className={classes("-container")}>
 					<div className={classes("-header")}>
 						<Typography
@@ -135,6 +136,7 @@ const CoursesContainer: React.FC = () => {
 						</Responsive.Row>
 					</div>
 				</div>
+				<hr className={classes("-courses-hr")} />
 			</div>
 		</>
 	);

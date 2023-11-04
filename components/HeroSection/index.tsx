@@ -168,7 +168,6 @@ const HeroSection = () => {
 					<BsArrowRightShort className={classes("-btn-arrow")} />
 				</Button>
 				<hr className={classes("-hero-hr")} />
-				<div className={classes("-hr-container")}></div>
 			</div>
 		</>
 	);

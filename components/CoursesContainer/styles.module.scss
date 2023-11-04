@@ -8,6 +8,22 @@
 	margin-top: -80px;
 	// position: static;
 
+	&-gradient-container {
+		text-align: center;
+		height: 80px;
+		width: 428px;
+		background: linear-gradient(
+			180deg,
+			#04d9ff 0%,
+			rgba(255, 255, 255, 0) 100%
+		);
+		opacity: 0.4;
+		filter: blur(77px);
+		margin: auto;
+		margin-bottom: 0;
+		// margin-top: 115px;
+	}
+
 	&-container {
 		width: 88%;
 		margin: auto;
@@ -33,5 +49,27 @@
 
 	&-cards-items {
 		gap: 40px 0;
+	}
+
+	&-courses-hr {
+		text-align: center;
+		width: 800px;
+		height: 2px;
+		border: none;
+		margin: auto;
+		margin-top: 100px;
+		color: linear-gradient(
+			90deg,
+			rgba(141, 147, 212, 0.01) 0%,
+			#8d93d4 47.4%,
+			rgba(141, 147, 212, 0) 100%
+		);
+		opacity: 0.6;
+		background: linear-gradient(
+			90deg,
+			rgba(141, 147, 212, 0.01) 0%,
+			#8d93d4 47.4%,
+			rgba(141, 147, 212, 0) 100%
+		);
 	}
 }
