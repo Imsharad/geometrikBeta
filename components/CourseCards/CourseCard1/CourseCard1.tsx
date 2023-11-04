@@ -111,6 +111,15 @@ const CourseCard1: React.FC<CourseCardProps> = ({
 
 					<div className={classes("-btn-container")}>
 						<HiArrowUpRight className={classes("-arrow-icon")} />
+						<Typography
+							as="div"
+							weight="bold"
+							size="xs"
+							family="red-hat-display"
+							className={classes("-btn-text")}
+						>
+							Learn More
+						</Typography>
 					</div>
 				</div>
 			</div>

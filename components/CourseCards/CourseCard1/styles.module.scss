@@ -30,6 +30,28 @@
 			transform: translateX(-180px);
 			transition: transform 0.5s ease;
 		}
+
+		.courses-card-btn-container {
+			width: 180px;
+			transition: transform 1s ease;
+		}
+
+		.courses-card-btn-text {
+			display: inline-flex;
+			width: auto;
+			// transition-delay: 0s, 0s, 1s;
+			transition: transform 0.5s ease;
+			white-space: nowrap;
+		}
+
+		.courses-card-arrow-icon {
+			margin: 15px;
+			z-index: 2;
+			color: white;
+			font-weight: 900;
+			height: 30px;
+			width: 30px;
+		}
 	}
 
 	&::after {
@@ -127,13 +149,20 @@
 	}
 
 	&-btn-container {
-		z-index: -1;
+		overflow: hidden;
+		width: fit-content;
+		display: flex;
+		flex-direction: row;
+		gap: 5px;
+		// z-index: -1;
 		border-radius: 30px;
 		height: 60px;
 		width: 60px;
 		background-color: #8d93d464;
-		mix-blend-mode: overlay;
-		padding: auto;
+		// mix-blend-mode: overlay;
+		align-items: center;
+		justify-content: flex-start;
+		// padding: auto;
 	}
 
 	&-arrow-icon {
@@ -143,5 +172,19 @@
 		font-weight: 900;
 		height: 30px;
 		width: 30px;
+	}
+
+	&-btn-text {
+		display: none;
+		width: 0;
+		color: #fff;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: 0.28px;
+		text-transform: uppercase;
+		transition:
+			visibility 0s,
+			opacity 0.5s linear,
+			width 0.5s linear;
 	}
 }
