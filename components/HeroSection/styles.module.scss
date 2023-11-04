@@ -4,7 +4,7 @@
 .hero-section {
 	width: 100%;
 	margin: 0;
-	margin-top: 0;
+	margin-top: 150px;
 	// height: 170vh;
 	position: relative;
 	background-color: black;
@@ -169,6 +169,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 4px;
+		cursor: pointer;
 	}
 
 	&-btn-text-1 {
@@ -188,12 +189,26 @@
 		height: 24px;
 	}
 
-	&-hero-hr {
+	&-hr-container {
 		text-align: center;
-		width: 800px;
+		height: 112px;
+		width: 428px;
+		background: linear-gradient(
+			180deg,
+			#04d9ff 0%,
+			rgba(255, 255, 255, 0) 100%
+		);
+		opacity: 0.4;
+		filter: blur(77px);
 		margin: auto;
 		margin-top: 115px;
+	}
+
+	&-hero-hr {
+		position: absolute;
+		width: 800px;
 		height: 1px;
+		color: white;
 		opacity: 0.6;
 		background: linear-gradient(
 			90deg,

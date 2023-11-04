@@ -1,0 +1,32 @@
+@import "@/styles/config/mixins";
+@import "@/styles/config/typography";
+
+.course-container {
+	width: 100%;
+	background: var(--black);
+
+	flex-shrink: 0;
+	position: static;
+
+	&-container {
+		width: 88%;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&-title-line {
+		text-align: center;
+		color: white;
+		font-size: 60px;
+		font-style: normal;
+		line-height: normal;
+		mix-blend-mode: difference;
+	}
+
+	&-cards-container {
+		margin-top: 80px;
+	}
+}
