@@ -46,7 +46,7 @@ const CourseData: ICoursesDataType[] = [
 		heading: "ChatGPT For Product Management",
 		description:
 			"Elevate Your Data Science Path with ChatGPT: Dive into a world of comprehensive expertise, tailored insights, and expert guidance to navigate the complexities of data science with confidence and precision",
-		overlay: "Business Analytics",
+		overlay: "Product Management",
 		duration: "23rd Oct’23 - 23rd Dec’23",
 		price: "$899",
 	},
@@ -56,7 +56,7 @@ const CourseData: ICoursesDataType[] = [
 		heading: "ChatGPT For Software Engineering",
 		description:
 			"Elevate Your Data Science Path with ChatGPT: Dive into a world of comprehensive expertise, tailored insights, and expert guidance to navigate the complexities of data science with confidence and precision",
-		overlay: "Business Analytics",
+		overlay: "Software Engineering",
 		duration: "23rd Oct’23 - 23rd Dec’23",
 		price: "$899",
 	},

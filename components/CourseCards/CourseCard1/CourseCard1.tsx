@@ -5,7 +5,7 @@ import { ICoursesDataType } from "@/types/Courses";
 import { Typography } from "@/library";
 import { HiArrowUpRight } from "react-icons/hi2";
 
-const classes = stylesConfig(styles, "courses-card1");
+const classes = stylesConfig(styles, "courses-card");
 
 interface CourseCardProps extends ICoursesDataType {
 	tag: string;
