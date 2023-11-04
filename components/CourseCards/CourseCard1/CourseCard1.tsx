@@ -1,12 +1,11 @@
 import React from "react";
 import styles from "./styles.module.scss";
-
 import { stylesConfig } from "@/utils/functions";
 import { ICoursesDataType } from "@/types/Courses";
 import { Typography } from "@/library";
 import { HiArrowUpRight } from "react-icons/hi2";
 
-const classes = stylesConfig(styles, "courses-card");
+const classes = stylesConfig(styles, "courses-card1");
 
 interface CourseCardProps extends ICoursesDataType {
 	tag: string;
@@ -17,7 +16,7 @@ interface CourseCardProps extends ICoursesDataType {
 	price: string;
 }
 
-const CourseCard: React.FC<CourseCardProps> = ({
+const CourseCard1: React.FC<CourseCardProps> = ({
 	tag,
 	heading,
 	description,
@@ -119,4 +118,4 @@ const CourseCard: React.FC<CourseCardProps> = ({
 	);
 };
 
-export default CourseCard;
+export default CourseCard1;

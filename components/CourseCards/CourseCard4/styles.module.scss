@@ -1,4 +1,4 @@
-.courses-card {
+.courses-card4 {
 	// width: 32%;
 	// z-index: 1;
 	position: static;
@@ -18,6 +18,22 @@
 		flex-direction: column;
 		gap: 18px;
 		// align-items: center;
+
+		// &-container::after {
+		//     content: "";
+		//     position: absolute;
+		//     bottom: 0;
+		//     right: 0;
+		//     width: 50%;
+		//     height: 50%;
+		//     background: linear-gradient(
+		//         74deg,
+		//         rgba(64, 119, 245, 0.6) 17.66%,
+		//         rgba(42, 189, 240, 0.6) 64.85%
+		//     );
+		//     opacity: 0.4;
+		//     filter: blur(332.5px);
+		// }
 	}
 
 	&-tag {

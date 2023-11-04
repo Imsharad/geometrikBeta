@@ -1,0 +1,127 @@
+.courses-card6 {
+	// width: 32%;
+	// z-index: 1;
+	position: static;
+	width: 540px;
+	height: 600px;
+	border-radius: 40px;
+	border: 1px solid rgba(58, 62, 111, 0.8);
+	background: rgba(58, 62, 111, 0.2);
+	box-shadow: 4px 4px 40px -8px rgba(58, 62, 111, 0.25) inset;
+	margin-bottom: 10px;
+	// padding: 20px;
+
+	&-container {
+		// width: 98%;
+		margin: 40px;
+		display: flex;
+		flex-direction: column;
+		gap: 18px;
+		// align-items: center;
+
+		// &-container::after {
+		//     content: "";
+		//     position: absolute;
+		//     bottom: 0;
+		//     right: 0;
+		//     width: 50%;
+		//     height: 50%;
+		//     background: linear-gradient(
+		//         74deg,
+		//         rgba(64, 119, 245, 0.6) 17.66%,
+		//         rgba(42, 189, 240, 0.6) 64.85%
+		//     );
+		//     opacity: 0.4;
+		//     filter: blur(332.5px);
+		// }
+	}
+
+	&-tag {
+		color: #8d93d4;
+		font-style: normal;
+		line-height: 19.6px;
+		letter-spacing: 0.28px;
+		text-decoration-line: underline;
+	}
+
+	&-heading {
+		color: #fff;
+		font-size: 36px;
+		font-style: normal;
+		line-height: normal;
+	}
+
+	&-desc {
+		color: #c4c4c4;
+		font-style: normal;
+		line-height: 22.4px;
+		align-self: stretch;
+	}
+
+	&-overlay {
+		// width: 100%;
+		white-space: nowrap;
+		text-align: right;
+		font-size: 100px;
+		font-style: normal;
+		font-weight: 800;
+		line-height: 76.3px;
+		letter-spacing: 2px;
+		color: transparent;
+		text-transform: capitalize;
+		mix-blend-mode: overlay;
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: var(--white);
+	}
+
+	&-duration-container,
+	&-price-container {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+	}
+
+	&-from-text {
+		color: #999;
+		font-style: normal;
+		line-height: normal;
+		text-transform: capitalize;
+	}
+
+	&-duration {
+		color: #fff;
+		font-style: normal;
+		line-height: normal;
+		text-transform: capitalize;
+	}
+
+	&-only-at-text {
+		color: #999;
+		font-style: normal;
+		line-height: normal;
+		text-transform: capitalize;
+	}
+
+	&-price {
+		color: #fff;
+		font-style: normal;
+		line-height: normal;
+		text-transform: capitalize;
+	}
+
+	&-btn-container {
+		border-radius: 30px;
+		height: 60px;
+		width: 60px;
+		background: url(/images/round-btn.svg);
+		background-color: #8d93d4;
+		mix-blend-mode: overlay;
+		padding: auto;
+	}
+
+	&-arrow-icon {
+		z-index: 2;
+		color: white;
+		// mix-blend-mode: color;
+	}
+}
