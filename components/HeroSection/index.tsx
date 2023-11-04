@@ -1,14 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { stylesConfig } from "@/utils/functions";
 import styles from "./styles.module.scss";
 import { Button, Typography } from "@/library";
 import rocketImg from "@/public/icons/rocket.svg";
 import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
 import { BsArrowRightShort } from "react-icons/bs";
 
 const classes = stylesConfig(styles, "hero-section");
 
 const HeroSection = () => {
+	const [domains, setDomains] = useState([
+		"ChatGPT",
+		"LLM",
+		"NLP",
+		"Data Science",
+		"Python",
+		"UI/UX Design",
+	]);
+
+	const shuffleLeft = () => {
+		setDomains((prev) => [...prev.slice(1), prev[0]]);
+	};
+
+	useEffect(() => {
+		const interval = setInterval(() => {
+			shuffleLeft();
+		}, 3000);
+
+		return () => clearInterval(interval);
+	}, []);
+
 	return (
 		<>
 			<div className={classes("")}>
@@ -92,62 +114,29 @@ const HeroSection = () => {
 					</div>
 
 					<div className={classes("-domain-carousal-container")}>
-						<div className={classes("-carousal-items")}>
-							<Typography
-								family="red-hat-display"
-								size="xl"
-								weight="bold"
-								as="div"
-								className={classes("-carousal-item")}
-							>
-								ChatGPT
-							</Typography>
-							<Typography
-								family="red-hat-display"
-								size="xl"
-								weight="bold"
-								as="div"
-								className={classes("-carousal-item")}
-							>
-								LLM
-							</Typography>
-							<Typography
-								family="red-hat-display"
-								size="xl"
-								weight="bold"
-								as="div"
-								className={classes("-carousal-item")}
-							>
-								NLP
-							</Typography>
-							<Typography
-								family="red-hat-display"
-								size="xl"
-								weight="bold"
-								as="div"
-								className={classes("-carousal-item")}
-							>
-								Data Science
-							</Typography>
-							<Typography
-								family="red-hat-display"
-								size="xl"
-								weight="bold"
-								as="div"
-								className={classes("-carousal-item")}
-							>
-								Python
-							</Typography>
-							<Typography
-								family="red-hat-display"
-								size="xxxl"
-								weight="bold"
-								as="div"
-								className={classes("-carousal-item")}
-							>
-								UI/UX Design
-							</Typography>
-						</div>
+						{domains.map((domain) => (
+							<AnimatePresence mode="popLayout" key={1}>
+								<motion.div
+									key={domain}
+									layout
+									initial={{ opacity: 0, scale: 0 }}
+									animate={{ opacity: 1, scale: 1 }}
+									exit={{ opacity: 0, scale: 0 }}
+									transition={{ duration: 0.5 }}
+									className={classes("-carousel-items")}
+								>
+									<Typography
+										family="red-hat-display"
+										size="xl"
+										weight="bold"
+										as="div"
+										className={classes("-carousal-item")}
+									>
+										{domain}
+									</Typography>
+								</motion.div>
+							</AnimatePresence>
+						))}
 					</div>
 				</div>
 				<Button
