@@ -28,10 +28,10 @@ const CoursesContainer: React.FC = () => {
 						<Responsive.Row className={classes("-cards-items")}>
 							{CourseData.map((courses, index) => (
 								<Responsive.Col
-									xlg={43}
-									lg={43}
-									md={43}
-									sm={43}
+									xlg={48}
+									lg={48}
+									md={48}
+									sm={100}
 									xsm={100}
 									key={index}
 								>

@@ -6,7 +6,7 @@
 	background: var(--black);
 
 	flex-shrink: 0;
-	position: static;
+	// position: static;
 
 	&-container {
 		width: 88%;
@@ -27,6 +27,11 @@
 	}
 
 	&-cards-container {
+		width: 100%;
 		margin-top: 80px;
+	}
+
+	&-cards-items {
+		gap: 40px 0;
 	}
 }
