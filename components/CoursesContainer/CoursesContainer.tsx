@@ -3,11 +3,11 @@ import styles from "./styles.module.scss";
 import { stylesConfig } from "@/utils/functions";
 import { Typography } from "@/library";
 import CourseCard1 from "../CourseCards/CourseCard1/CourseCard1";
-import CourseCard2 from "../CourseCards/CourseCard1/CourseCard1";
-import CourseCard3 from "../CourseCards/CourseCard1/CourseCard1";
-import CourseCard4 from "../CourseCards/CourseCard1/CourseCard1";
-import CourseCard5 from "../CourseCards/CourseCard1/CourseCard1";
-import CourseCard6 from "../CourseCards/CourseCard1/CourseCard1";
+import CourseCard2 from "../CourseCards/CourseCard2/CourseCard2";
+import CourseCard3 from "../CourseCards/CourseCard3/CourseCard3";
+import CourseCard4 from "../CourseCards/CourseCard4/CourseCard4";
+import CourseCard5 from "../CourseCards/CourseCard5/CourseCard5";
+import CourseCard6 from "../CourseCards/CourseCard6/CourseCard6";
 import Responsive from "@/layouts/Responsive";
 import CourseData from "@/data/courseData";
 

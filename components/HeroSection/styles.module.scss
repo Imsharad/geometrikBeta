@@ -10,38 +10,6 @@
 	background-color: black;
 	color: white;
 
-	&::before {
-		content: "";
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 50%;
-		height: 50%;
-		background: linear-gradient(
-			74deg,
-			rgba(64, 119, 245, 0.6) 17.66%,
-			rgba(42, 189, 240, 0.6) 64.85%
-		);
-		opacity: 0.4;
-		filter: blur(332.5px);
-	}
-
-	&::after {
-		content: "";
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		width: 50%;
-		height: 50%;
-		background: linear-gradient(
-			74deg,
-			rgba(64, 119, 245, 0.6) 17.66%,
-			rgba(42, 189, 240, 0.6) 64.85%
-		);
-		opacity: 0.4;
-		filter: blur(332.5px);
-	}
-
 	&-top-gradient {
 		content: "";
 		position: absolute;
@@ -67,7 +35,7 @@
 
 	&-heading {
 		width: fit-content;
-		z-index: 1;
+		// z-index: 1;
 		margin-top: 130px;
 		margin-left: 120px;
 		// height: 322px;
@@ -115,7 +83,7 @@
 	}
 
 	&-heading-subtitle-text {
-		z-index: 1;
+		// z-index: 1;
 		margin-top: 20px;
 		margin-left: 120px;
 		color: #e5e7eb;
@@ -148,7 +116,7 @@
 
 	&-carousal-item {
 		line-height: normal;
-		z-index: 1;
+		// z-index: 1;
 		color: #fffbfb;
 		font-size: 75px;
 		font-family: "Josefin Sans";
@@ -191,7 +159,7 @@
 
 	&-hr-container {
 		text-align: center;
-		height: 112px;
+		height: 80px;
 		width: 428px;
 		background: linear-gradient(
 			180deg,
@@ -201,14 +169,24 @@
 		opacity: 0.4;
 		filter: blur(77px);
 		margin: auto;
-		margin-top: 115px;
+		margin-bottom: 0;
+		// margin-top: 115px;
 	}
 
 	&-hero-hr {
-		position: absolute;
+		// position: absolute;
+		text-align: center;
 		width: 800px;
-		height: 1px;
-		color: white;
+		height: 2px;
+		border: none;
+		margin: auto;
+		margin-top: 200px;
+		color: linear-gradient(
+			90deg,
+			rgba(40, 193, 239, 0.01) 0%,
+			#4075f5 47.4%,
+			rgba(40, 193, 239, 0) 100%
+		);
 		opacity: 0.6;
 		background: linear-gradient(
 			90deg,
@@ -216,5 +194,37 @@
 			#4075f5 47.4%,
 			rgba(40, 193, 239, 0) 100%
 		);
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 50%;
+		height: 50%;
+		background: linear-gradient(
+			74deg,
+			rgba(64, 119, 245, 0.6) 17.66%,
+			rgba(42, 189, 240, 0.6) 64.85%
+		);
+		opacity: 0.4;
+		filter: blur(332.5px);
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 50%;
+		height: 50%;
+		background: linear-gradient(
+			74deg,
+			rgba(64, 119, 245, 0.6) 17.66%,
+			rgba(42, 189, 240, 0.6) 64.85%
+		);
+		opacity: 0.4;
+		filter: blur(332.5px);
 	}
 }

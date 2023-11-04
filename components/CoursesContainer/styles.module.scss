@@ -4,8 +4,8 @@
 .course-container {
 	width: 100%;
 	background: var(--black);
-
 	flex-shrink: 0;
+	margin-top: -80px;
 	// position: static;
 
 	&-container {

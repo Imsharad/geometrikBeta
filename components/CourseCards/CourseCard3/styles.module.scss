@@ -1,17 +1,29 @@
 .courses-card3 {
 	// width: 32%;
-	// z-index: 1;
-	position: static;
+	z-index: 0;
+	position: relative;
+	overflow: hidden;
 	width: 540px;
 	height: 600px;
 	border-radius: 40px;
 	border: 1px solid rgba(39, 91, 68, 0.8);
-
 	background: rgba(39, 91, 68, 0.2);
-
 	box-shadow: 4px 4px 40px -8px rgba(58, 62, 111, 0.25) inset;
 	margin-bottom: 10px;
 	// padding: 20px;
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 400px;
+		height: 300px;
+		background: rgba(39, 91, 68, 0.8);
+		filter: blur(100px);
+		border-radius: 50%;
+		z-index: -1;
+	}
 
 	&-container {
 		// width: 98%;
@@ -19,27 +31,10 @@
 		display: flex;
 		flex-direction: column;
 		gap: 18px;
-		// align-items: center;
-
-		// &-container::after {
-		//     content: "";
-		//     position: absolute;
-		//     bottom: 0;
-		//     right: 0;
-		//     width: 50%;
-		//     height: 50%;
-		//     background: linear-gradient(
-		//         74deg,
-		//         rgba(64, 119, 245, 0.6) 17.66%,
-		//         rgba(42, 189, 240, 0.6) 64.85%
-		//     );
-		//     opacity: 0.4;
-		//     filter: blur(332.5px);
-		// }
 	}
 
 	&-tag {
-		color: #8d93d4;
+		color: #7de1b5;
 		font-style: normal;
 		line-height: 19.6px;
 		letter-spacing: 0.28px;
@@ -115,15 +110,17 @@
 		border-radius: 30px;
 		height: 60px;
 		width: 60px;
-		background: url(/images/round-btn.svg);
-		background-color: #8d93d4;
+		background-color: #7de1b665;
 		mix-blend-mode: overlay;
 		padding: auto;
 	}
 
 	&-arrow-icon {
+		margin: 15px;
 		z-index: 2;
 		color: white;
-		// mix-blend-mode: color;
+		font-weight: 900;
+		height: 30px;
+		width: 30px;
 	}
 }

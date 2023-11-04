@@ -110,7 +110,7 @@ const CourseCard2: React.FC<CourseCardProps> = ({
 					</div>
 
 					<div className={classes("-btn-container")}>
-						{/* <HiArrowUpRight className={classes("-arrow-icon")} /> */}
+						<HiArrowUpRight className={classes("-arrow-icon")} />
 					</div>
 				</div>
 			</div>
