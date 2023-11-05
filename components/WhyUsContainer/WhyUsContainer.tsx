@@ -52,29 +52,11 @@ const WhyUsContainer = () => {
 							// key={index}
 						>
 							<WhyUsCard1 />
+							<WhyUsCard2 />
+							<WhyUsCard3 />
 						</Responsive.Col>
 					</Responsive.Row>
-					<Responsive.Col
-						xlg={100}
-						lg={100}
-						md={100}
-						sm={100}
-						xsm={100}
-						// key={index}
-					>
-						<WhyUsCard2 />
-					</Responsive.Col>
-					<Responsive.Col
-						xlg={100}
-						lg={100}
-						md={100}
-						sm={100}
-						xsm={100}
-						// key={index}
-					>
-						<WhyUsCard3 />
-					</Responsive.Col>
-					<Responsive.Col
+					{/* <Responsive.Col
 						xlg={100}
 						lg={100}
 						md={100}
@@ -83,8 +65,10 @@ const WhyUsContainer = () => {
 						// key={index}
 					>
 						<WhyUsCard4 />
-					</Responsive.Col>
+					</Responsive.Col> */}
 				</div>
+
+				<hr className={classes("-why-us-hr")} />
 			</div>
 		</>
 	);
