@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./styles.module.scss";
 import { stylesConfig } from "@/utils/functions";
 import { Button, Typography } from "@/library";
-import TestimonialCard from "../TestimonialCard1/TestimonialCard1";
+import TestimonialCard from "../TestimonialCard/TestimonialCard";
 import testimonialData from "@/data/testimonialData";
 import Responsive from "@/layouts/Responsive";
 
@@ -55,6 +55,8 @@ const TestimonialsContainer: React.FC = () => {
 				>
 					Read All Success Stories
 				</Button>
+
+				<hr className={classes("-testimonial-hr")} />
 			</div>
 		</>
 	);

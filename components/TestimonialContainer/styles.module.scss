@@ -59,4 +59,26 @@
 		margin-top: 40px;
 		text-align: center;
 	}
+
+	&-testimonial-hr {
+		text-align: center;
+		width: 800px;
+		height: 2px;
+		border: none;
+		margin: auto;
+		margin-top: 100px;
+		color: linear-gradient(
+			90deg,
+			rgba(105, 109, 96, 0.01) 0%,
+			#696d60 47.4%,
+			rgba(105, 109, 96, 0) 100%
+		);
+		opacity: 0.6;
+		background: linear-gradient(
+			90deg,
+			rgba(105, 109, 96, 0.01) 0%,
+			#696d60 47.4%,
+			rgba(105, 109, 96, 0) 100%
+		);
+	}
 }
