@@ -1,0 +1,122 @@
+.why-us-card {
+	z-index: 1;
+	position: relative;
+	overflow: hidden;
+	width: 540px;
+	height: 540px;
+	border-radius: 40px;
+	background-color: black;
+
+	&-container {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		border-radius: 40;
+		overflow: hidden;
+		border: 0.5px #275b44 solid;
+	}
+
+	&-bg-vector {
+		z-index: 1;
+		width: 100%;
+		left: 10px;
+		position: absolute;
+		color: transparent;
+		mix-blend-mode: soft-light;
+	}
+
+	&-icons {
+		z-index: 2;
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		box-shadow: 0px 4px 64px rgba(40, 193, 239, 0.3);
+		border-radius: 9999px;
+		border: 0.5px #c4c4c4 solid;
+		background-color: white;
+	}
+
+	&-icon-1 {
+		left: 304px;
+		top: 21px;
+	}
+
+	&-icon-2 {
+		left: 260px;
+		top: 245px;
+	}
+
+	&-icon-3 {
+		left: 187px;
+		top: 137px;
+	}
+
+	&-icon-4 {
+		left: 364px;
+		top: 137px;
+	}
+
+	&-icon-5 {
+		left: 117px;
+		top: 28px;
+	}
+
+	&-icon-6 {
+		left: 20px;
+		top: 123px;
+	}
+
+	&-icon-7 {
+		left: 447px;
+		top: 58px;
+	}
+
+	&-icon-8 {
+		left: 424px;
+		top: 240px;
+	}
+
+	&-icon-9 {
+		left: 77px;
+		top: 270px;
+	}
+
+	&-icons-bg {
+		width: 540px;
+		height: 363px;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		opacity: 0.5;
+		background: radial-gradient(
+				50.76% 50.74% at 27.68% 25.72%,
+				rgba(39, 91, 68, 0) 0%,
+				#275b44 100%
+			),
+			linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #09090b 100%);
+
+		filter: blur(20px);
+	}
+
+	&-text-container {
+		left: 40px;
+		top: 376px;
+		position: absolute;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		gap: 16px;
+		display: inline-flex;
+	}
+
+	&-text-title {
+		color: #fff;
+		word-wrap: break-word;
+	}
+
+	&-text-subtitle {
+		width: 426px;
+		color: #c4c4c4;
+		word-wrap: break-word;
+	}
+}
