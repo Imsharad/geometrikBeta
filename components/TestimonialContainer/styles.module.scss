@@ -1,0 +1,62 @@
+@import "@/styles/config/mixins";
+@import "@/styles/config/typography";
+
+.testimonial-container {
+	width: 91%;
+	text-align: center;
+
+	@include responsive(phone) {
+		width: 92%;
+	}
+
+	&-gradient-container {
+		text-align: center;
+		height: 80px;
+		width: 428px;
+		background: linear-gradient(
+			180deg,
+			#7de1b5 0%,
+			rgba(255, 255, 255, 0) 100%
+		);
+		opacity: 0.4;
+		filter: blur(77px);
+		margin: auto;
+		margin-bottom: 0;
+		// margin-top: 115px;
+	}
+
+	&-header {
+		margin-top: -80px;
+		text-align: center;
+	}
+
+	&-title-line {
+		color: #fff;
+		text-align: center;
+		font-size: 60px;
+		font-style: normal;
+		line-height: normal;
+		mix-blend-mode: difference;
+
+		@include responsive(phone) {
+			font-size: 24px;
+			letter-spacing: 0.96px;
+		}
+	}
+
+	&-cards-container {
+		margin-top: 40px;
+	}
+
+	&-cards-items {
+		justify-content: space-around;
+		gap: 40px;
+		// row-gap: 40px;
+		// column-gap: 0;
+	}
+
+	&-testimonial-btn {
+		margin-top: 40px;
+		text-align: center;
+	}
+}
