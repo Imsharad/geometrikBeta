@@ -1,8 +1,6 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import { stylesConfig } from "@/utils/functions";
-// import TechnestLogo from "@/public/logos/TN_Logo-2.svg";
-import Image from "next/image";
 import { Button, Typography } from "@/library";
 import {
 	FaLinkedinIn,
@@ -10,12 +8,10 @@ import {
 	FaYoutube,
 	FaInstagram,
 } from "react-icons/fa";
-import { useRouter } from "next/router";
 
 const classes = stylesConfig(styles, "footer");
 
 const Footer: React.FC = () => {
-	const router = useRouter();
 	return (
 		<footer className={classes("")}>
 			<div className={classes("-container")}>
