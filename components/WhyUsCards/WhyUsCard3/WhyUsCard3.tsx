@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import styles from "./styles.module.scss";
 import { stylesConfig } from "@/utils/functions";
 import { Typography } from "@/library";
