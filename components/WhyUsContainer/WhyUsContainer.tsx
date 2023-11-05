@@ -5,6 +5,7 @@ import { Typography } from "@/library";
 import Responsive from "@/layouts/Responsive";
 import WhyUsCard1 from "../WhyUsCards/WhyUsCard1/WhyUsCard1";
 import WhyUsCard2 from "../WhyUsCards/WhyUsCard2/WhyUsCard2";
+import WhyUsCard3 from "../WhyUsCards/WhyUsCard3/WhyUsCard3";
 
 const classes = stylesConfig(styles, "why-us-container");
 
@@ -61,6 +62,16 @@ const WhyUsContainer = () => {
 						// key={index}
 					>
 						<WhyUsCard2 />
+					</Responsive.Col>
+					<Responsive.Col
+						xlg={100}
+						lg={100}
+						md={100}
+						sm={100}
+						xsm={100}
+						// key={index}
+					>
+						<WhyUsCard3 />
 					</Responsive.Col>
 				</div>
 			</div>
