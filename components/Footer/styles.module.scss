@@ -1,0 +1,260 @@
+@import "@/styles/config/mixins";
+@import "@/styles/config/typography";
+
+.footer {
+	// position: relative;
+	height: 482px;
+	width: 100%;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	background: url("/images/background-drop.png");
+	background-repeat: round;
+	@include font($color: var(--theme-grey-1));
+	line-height: normal;
+
+	@include responsive(phone) {
+		height: auto;
+		background: linear-gradient(to bottom, #121212, #232323);
+		// background-repeat: round;
+	}
+
+	&-container {
+		margin: 40px 80px;
+		width: 83%;
+
+		@include responsive(phone) {
+			width: 85%;
+			margin: auto;
+		}
+	}
+
+	&-company-details-offerings {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		@include responsive(phone) {
+			flex-direction: column;
+			gap: 20px;
+			justify-content: space-around;
+			align-self: center;
+		}
+	}
+
+	&-details {
+		display: flex;
+		flex-direction: column;
+		width: 24%;
+		justify-content: flex-start;
+		gap: 25px;
+		line-height: normal;
+
+		@include responsive(phone) {
+			width: 100%;
+			justify-content: center;
+			align-items: center;
+			margin-top: 30px;
+		}
+	}
+
+	&-footer-logo {
+		background: linear-gradient(93deg, #4075f5 -4.35%, #04d9ff 95.25%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-style: normal;
+		line-height: normal;
+		// text-transform: lowercase;
+		cursor: pointer;
+
+		@include responsive(phone) {
+			width: 100px;
+			height: 35.533px;
+		}
+	}
+
+	&-details-section {
+		line-height: normal;
+
+		@include responsive(phone) {
+			font-size: 14px;
+			font-weight: 400;
+		}
+	}
+
+	&-register-btn {
+		width: 160px;
+		line-height: normal;
+	}
+
+	&-courses {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		margin-top: 2%;
+
+		@include responsive(phone) {
+			justify-content: center;
+			align-items: center;
+			gap: 25px;
+		}
+	}
+
+	&-courses-heading {
+		width: max-content;
+
+		@include responsive(phone) {
+			font-size: 20px;
+		}
+	}
+
+	&-courses-contents {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		text-transform: uppercase;
+
+		@include responsive(phone) {
+			justify-content: center;
+			align-items: center;
+			margin-top: 0px;
+		}
+	}
+
+	&-courses-contents-items {
+		display: flex;
+		flex-direction: column;
+		width: max-content;
+		line-height: normal;
+
+		a {
+			color: inherit;
+			text-decoration: inherit;
+		}
+
+		@include responsive(phone) {
+			justify-content: center;
+			align-items: center;
+			font-size: 14px;
+		}
+	}
+
+	&-social-media {
+		margin-top: 2%;
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		width: max-content;
+
+		@include responsive(phone) {
+			width: 100%;
+			justify-content: center;
+			align-items: center;
+			gap: 25px;
+		}
+	}
+
+	&-social-media-heading {
+		width: max-content;
+
+		@include responsive(phone) {
+			font-size: 20px;
+		}
+	}
+
+	&-social-media-contents {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		width: max-content;
+		text-transform: uppercase;
+
+		@include responsive(phone) {
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	&-social-media-items {
+		display: flex;
+		flex-direction: column;
+
+		width: max-content;
+		line-height: normal;
+
+		a {
+			color: inherit;
+			text-decoration: inherit;
+		}
+
+		@include responsive(phone) {
+			justify-content: center;
+			align-items: center;
+			font-size: 14px;
+		}
+	}
+
+	&-icon-text-container {
+		display: flex;
+		flex-direction: row;
+		gap: 16px;
+	}
+
+	&-bottom-hr {
+		border: none;
+		height: 1px;
+		width: 100%;
+		margin: 25px 40px;
+		background: linear-gradient(
+			270deg,
+			rgba(255, 255, 255, 0.03) 0%,
+			rgba(255, 255, 255, 0.6) 50.83%,
+			rgba(255, 255, 255, 0) 99.58%
+		);
+
+		@include responsive(phone) {
+			text-align: center;
+			margin-top: 60px;
+			margin-left: 0;
+			margin-right: 0;
+			margin-bottom: auto;
+		}
+	}
+
+	&-copyright-developed {
+		display: flex;
+		// margin: auto;
+		flex-direction: row;
+		justify-content: space-between;
+		text-transform: uppercase;
+		// width: 84%;
+
+		@include responsive(phone) {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			margin: auto;
+			padding-bottom: 10px;
+		}
+	}
+
+	&-copyright-details {
+		margin-right: 50px;
+		line-height: normal;
+
+		@include responsive(phone) {
+			text-align: center;
+			width: 100%;
+			margin: auto;
+		}
+	}
+
+	&-copyright-details-text {
+		@include responsive(phone) {
+			margin: auto;
+			// width: ;
+			text-align: center;
+			font-size: 10px;
+		}
+	}
+}
