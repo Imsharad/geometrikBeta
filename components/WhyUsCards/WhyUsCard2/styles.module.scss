@@ -1,0 +1,299 @@
+.why-us-card2 {
+	z-index: 1;
+	position: relative;
+	overflow: hidden;
+	width: 540px;
+	height: 540px;
+	border-radius: 40px;
+	background-color: black;
+
+	&-container {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		border-radius: 40px;
+		overflow: hidden;
+		border: 0.5px #2f5565 solid;
+	}
+
+	&-top-container-gradient {
+		width: 540px;
+		height: 363px;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		opacity: 0.5;
+		background: radial-gradient(
+				50.76% 50.74% at 27.68% 25.72%,
+				rgba(58, 62, 111, 0) 0%,
+				#3a3e6f 100%
+			),
+			linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #09090b 100%);
+		filter: blur(30px);
+	}
+
+	&-bg-vector {
+		z-index: 1;
+		width: 100%;
+		left: 10px;
+		position: absolute;
+		color: transparent;
+		mix-blend-mode: soft-light;
+	}
+
+	&-top-container {
+		width: 707px;
+		height: 469px;
+		left: 0px;
+		top: -106px;
+		position: absolute;
+		mix-blend-mode: overlay;
+	}
+
+	&-nametag-1 {
+		z-index: 2;
+		width: 266px;
+		height: 88px;
+		left: 40px;
+		top: 40px;
+		position: absolute;
+	}
+
+	&-nametag-1-container {
+		width: 200px;
+		height: 60px;
+		left: 66px;
+		top: 10px;
+		position: absolute;
+		background: rgba(47, 85, 101, 0.2);
+		border-top-left-radius: 20px;
+		border-top-right-radius: 100px;
+		border: 0.5px #c4c4c4 solid;
+	}
+
+	&-nametag-1-contents {
+		width: 125px;
+		height: 41px;
+		left: 94px;
+		top: 19px;
+		position: absolute;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		gap: 4px;
+		display: inline-flex;
+	}
+
+	&-title {
+		color: white;
+		word-wrap: break-word;
+		line-height: normal;
+	}
+
+	&-designation {
+		color: #c4c4c4;
+		width: max-content;
+		font-style: normal;
+		line-height: normal;
+	}
+
+	&-avatar-1 {
+		width: 80px;
+		height: 80px;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		border-radius: 9999px;
+		border: 1px #04d9ff solid;
+	}
+
+	&-nametag-1-company-container {
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 58px;
+		position: absolute;
+	}
+
+	&-nametag-1-company-bg {
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		background: white;
+		border-radius: 9999px;
+	}
+
+	&-nametag-1-company-img {
+		width: 15px;
+		height: 15px;
+		left: 7.5px;
+		top: 7.5px;
+		position: absolute;
+	}
+
+	&-nametag-2 {
+		z-index: 2;
+		width: 240px;
+		height: 89px;
+		left: 260px;
+		top: 134px;
+		position: absolute;
+	}
+
+	&-nametag-2-container {
+		width: 200px;
+		height: 60px;
+		left: 180px;
+		top: 74px;
+		position: absolute;
+		transform: rotate(180deg);
+		transform-origin: 0 0;
+		background: rgba(68, 37, 37, 0.2);
+		border-top-left-radius: 20px;
+		border-top-right-radius: 100px;
+		border: 0.5px #c4c4c4 solid;
+	}
+
+	&-nametag-2-contents {
+		width: 115px;
+		height: 38px;
+		left: 28px;
+		top: 23px;
+		position: absolute;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		gap: 4px;
+		display: inline-flex;
+	}
+
+	&-avatar-2 {
+		width: 80px;
+		height: 80px;
+		left: 160px;
+		top: 0px;
+		position: absolute;
+		border-radius: 9999px;
+		border: 1px white solid;
+	}
+
+	&-nametag-2-company-container {
+		width: 30px;
+		height: 30px;
+		left: 210px;
+		top: 59px;
+		position: absolute;
+	}
+
+	&-nametag-2-company-bg {
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		background: white;
+		border-radius: 9999px;
+	}
+
+	&-nametag-2-company-img {
+		width: 15px;
+		height: 15px;
+		left: 7.5px;
+		top: 7.5px;
+		position: absolute;
+	}
+
+	&-nametag-3 {
+		z-index: 2;
+		width: 261px;
+		height: 88px;
+		left: 47px;
+		top: 229px;
+		position: absolute;
+	}
+
+	&-nametag-3-container {
+		width: 200px;
+		height: 60px;
+		left: 61px;
+		top: 10px;
+		position: absolute;
+		background: rgba(39, 91, 68, 0.2);
+		border-top-left-radius: 20px;
+		border-top-right-radius: 100px;
+		border: 0.5px #c4c4c4 solid;
+	}
+
+	&-nametag-3-contents {
+		width: 113px;
+		height: 41px;
+		left: 94px;
+		top: 19px;
+		position: absolute;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		gap: 4px;
+		display: inline-flex;
+	}
+
+	&-avatar-3 {
+		width: 80px;
+		height: 80px;
+		// left: 160px;
+		top: 0px;
+		position: absolute;
+		border-radius: 9999px;
+		border: 1px white solid;
+	}
+
+	&-nametag-3-company-container {
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 58px;
+		position: absolute;
+	}
+
+	&-nametag-3-company-bg {
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		background: white;
+		border-radius: 9999px;
+	}
+
+	&-nametag-3-company-img {
+		width: 20px;
+		height: 20px;
+		left: 5px;
+		top: 5px;
+		position: absolute;
+	}
+
+	&-card-desc {
+		left: 40px;
+		top: 376px;
+		position: absolute;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		gap: 16px;
+		display: inline-flex;
+	}
+
+	&-card-title {
+		color: white;
+		word-wrap: break-word;
+	}
+
+	&-card-subtitle {
+		width: 426px;
+		color: #c4c4c4;
+		word-wrap: break-word;
+	}
+}
