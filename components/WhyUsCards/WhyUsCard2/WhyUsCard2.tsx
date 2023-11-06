@@ -17,13 +17,13 @@ const WhyUsCard2 = () => {
 		<>
 			<div className={classes("")}>
 				<div className={classes("-container")}>
-					<div className={classes("-top-container-gradient")} />
-					<div className={classes("-top-container")}></div>
 					<Image
 						src={bgVector}
 						alt="vector-img"
 						className={classes("-bg-vector")}
 					/>
+					<div className={classes("-top-container-gradient")} />
+					<div className={classes("-top-container")}></div>
 
 					<div className={classes("-nametag-1")}>
 						<div className={classes("-nametag-1-container")} />
