@@ -17,14 +17,6 @@ const Footer: React.FC = () => {
 			<div className={classes("-container")}>
 				<div className={classes("-company-details-offerings")}>
 					<div className={classes("-details")}>
-						{/* <Image
-							src={TechnestLogo}
-							alt="Technest Logo"
-							className={classes("-footer-logo")}
-							onClick={() => {
-								router.push("/");
-							}}
-						/> */}
 						<Typography
 							as="div"
 							size="lg"
