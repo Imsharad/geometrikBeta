@@ -43,7 +43,7 @@ const WhyUsContainer = () => {
 				</div>
 
 				<div className={classes("-cards-container")}>
-					<Responsive.Row className={classes("-cards-items")}>
+					<Responsive.Row className={classes("-cards-items-1")}>
 						<Responsive.Col
 							xlg={100}
 							lg={100}
@@ -57,7 +57,7 @@ const WhyUsContainer = () => {
 							<WhyUsCard3 />
 						</Responsive.Col>
 					</Responsive.Row>
-					<Responsive.Row className={classes("-cards-items")}>
+					<Responsive.Row className={classes("-cards-items-2")}>
 						<Responsive.Col
 							xlg={100}
 							lg={100}
