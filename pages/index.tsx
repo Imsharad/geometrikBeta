@@ -6,6 +6,7 @@ import CoursesContainer from "@/components/CoursesContainer/CoursesContainer";
 import WhyUsContainer from "@/components/WhyUsContainer/WhyUsContainer";
 import TestimonialsContainer from "@/components/TestimonialContainer/TestimonialContainer";
 import Footer from "@/components/Footer";
+import FaqContainer from "@/components/FaqContainer/FaqContainer";
 
 const classes = stylesConfig(styles, "home");
 
@@ -15,6 +16,7 @@ const HomePage: React.FC = () => (
 		<CoursesContainer />
 		<WhyUsContainer />
 		<TestimonialsContainer />
+		<FaqContainer />
 		<Footer />
 	</main>
 );
