@@ -9,7 +9,9 @@ const classes = stylesConfig(styles, "why-us-card4");
 const WhyUsCard4 = () => {
 	return (
 		<>
-			<div className={classes("")}></div>
+			<div className={classes("")}>
+				<div className={classes("-container")}> </div>
+			</div>
 		</>
 	);
 };

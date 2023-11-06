@@ -7,6 +7,7 @@ import WhyUsCard1 from "../WhyUsCards/WhyUsCard1/WhyUsCard1";
 import WhyUsCard2 from "../WhyUsCards/WhyUsCard2/WhyUsCard2";
 import WhyUsCard3 from "../WhyUsCards/WhyUsCard3/WhyUsCard3";
 import WhyUsCard4 from "../WhyUsCards/WhyUsCard4/WhyUsCard4";
+import WhyUsCard5 from "../WhyUsCards/WhyUsCard5/WhyUsCard5";
 
 const classes = stylesConfig(styles, "why-us-container");
 
@@ -56,16 +57,19 @@ const WhyUsContainer = () => {
 							<WhyUsCard3 />
 						</Responsive.Col>
 					</Responsive.Row>
-					{/* <Responsive.Col
-						xlg={100}
-						lg={100}
-						md={100}
-						sm={100}
-						xsm={100}
-						// key={index}
-					>
-						<WhyUsCard4 />
-					</Responsive.Col> */}
+					<Responsive.Row className={classes("-cards-items")}>
+						<Responsive.Col
+							xlg={100}
+							lg={100}
+							md={100}
+							sm={100}
+							xsm={100}
+							// key={index}
+						>
+							<WhyUsCard5 />
+							{/* <WhyUsCard5 /> */}
+						</Responsive.Col>
+					</Responsive.Row>
 				</div>
 
 				<hr className={classes("-why-us-hr")} />
