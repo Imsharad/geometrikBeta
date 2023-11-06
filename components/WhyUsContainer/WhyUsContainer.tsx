@@ -66,8 +66,8 @@ const WhyUsContainer = () => {
 							xsm={100}
 							// key={index}
 						>
+							<WhyUsCard4 />
 							<WhyUsCard5 />
-							{/* <WhyUsCard5 /> */}
 						</Responsive.Col>
 					</Responsive.Row>
 				</div>
