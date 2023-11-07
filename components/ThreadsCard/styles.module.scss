@@ -1,0 +1,99 @@
+.threads-card-container {
+	width: 360px;
+	height: 331px;
+	display: flex;
+	flex-direction: column;
+	// justify-content: center;
+	gap: 30px;
+	flex-shrink: 0;
+	padding: 20px;
+	text-align: left;
+	// border-radius: 20px;
+	// border: 0.5px solid var(--theme-primary);
+	border-radius: 20px;
+	border: 0.5px solid #3a3e6f;
+	background: linear-gradient(
+		180deg,
+		rgba(58, 62, 111, 0.2) 0.03%,
+		rgba(58, 62, 111, 0) 108.52%
+	);
+	box-shadow:
+		8px 8px 24px 0px rgba(255, 255, 255, 0.05) inset,
+		-8px -8px 24px 0px rgba(255, 255, 255, 0.05) inset;
+
+	&-threads-header {
+		display: flex;
+		flex-direction: row;
+		gap: 30px;
+		align-items: center;
+	}
+
+	&-header-img {
+		width: 60px;
+		height: 60px;
+		flex-shrink: 0;
+	}
+
+	&-header-contents {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+	}
+
+	&-header-name {
+		font-size: 16px;
+		line-height: normal;
+		text-transform: capitalize;
+		line-height: normal;
+	}
+
+	&-dot {
+		height: 4px;
+		width: 4px;
+		background-color: white;
+		border-radius: 50%;
+		display: inline-block;
+	}
+
+	&-header-titles {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 4px;
+	}
+
+	&-subtitle {
+		color: #c4c4c4;
+		font-size: 12px;
+		font-style: normal;
+		line-height: normal;
+		text-transform: capitalize;
+	}
+
+	&-twitter-logo {
+		height: 24px;
+		width: 24px;
+	}
+
+	&-threads-body {
+		display: flex;
+		flex-direction: column;
+		// gap: 10px;
+	}
+
+	&-likes-comments {
+		width: 150px;
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		margin: auto;
+		gap: 10px;
+	}
+
+	&-likes-comments-content {
+		display: flex;
+		flex-direction: row;
+		gap: 10px;
+		align-items: center;
+	}
+}
