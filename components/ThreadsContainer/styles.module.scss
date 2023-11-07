@@ -1,9 +1,10 @@
 @import "@/styles/config/mixins";
 @import "@/styles/config/typography";
 
-.testimonial-container {
-	width: 80%;
+.threads-container {
+	width: 85%;
 	text-align: center;
+	margin: auto;
 
 	@include responsive(phone) {
 		width: 92%;
@@ -15,7 +16,7 @@
 		width: 428px;
 		background: linear-gradient(
 			180deg,
-			#7de1b5 0%,
+			#696d60 0%,
 			rgba(255, 255, 255, 0) 100%
 		);
 		opacity: 0.4;
@@ -48,19 +49,7 @@
 		margin-top: 40px;
 	}
 
-	&-cards-items {
-		justify-content: space-around;
-		gap: 40px;
-		// row-gap: 40px;
-		// column-gap: 0;
-	}
-
-	&-testimonial-btn {
-		margin-top: 40px;
-		text-align: center;
-	}
-
-	&-testimonial-hr {
+	&-threads-hr {
 		text-align: center;
 		width: 800px;
 		height: 2px;
@@ -76,9 +65,9 @@
 		opacity: 0.6;
 		background: linear-gradient(
 			90deg,
-			rgba(105, 109, 96, 0.01) 0%,
-			#696d60 47.4%,
-			rgba(105, 109, 96, 0) 100%
+			rgba(229, 155, 134, 0.01) 0%,
+			#e59b86 47.4%,
+			rgba(229, 155, 134, 0) 100%
 		);
 	}
 }

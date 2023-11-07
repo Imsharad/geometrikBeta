@@ -5,6 +5,7 @@ import HeroSection from "@/components/HeroSection";
 import CoursesContainer from "@/components/CoursesContainer/CoursesContainer";
 import WhyUsContainer from "@/components/WhyUsContainer/WhyUsContainer";
 import TestimonialsContainer from "@/components/TestimonialContainer/TestimonialContainer";
+import ThreadsContainer from "@/components/ThreadsContainer/ThreadsContainer";
 import Footer from "@/components/Footer";
 import FaqContainer from "@/components/FaqContainer/FaqContainer";
 
@@ -16,6 +17,7 @@ const HomePage: React.FC = () => (
 		<CoursesContainer />
 		<WhyUsContainer />
 		<TestimonialsContainer />
+		<ThreadsContainer />
 		<FaqContainer />
 		<Footer />
 	</main>
