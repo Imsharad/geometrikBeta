@@ -11,10 +11,12 @@ const FaqContainer: React.FC = () => {
 	const [active, setActive] = useState(-1);
 	return (
 		<section className={classes("")} id="faqs">
+			<div className={classes("-gradient-container")}></div>
 			<Typography
 				weight="bold"
-				size="sm"
-				as="h2"
+				size="xxl"
+				as="h1"
+				family="red-hat-display"
 				className={classes("-title")}
 			>
 				Frequently Asked Questions

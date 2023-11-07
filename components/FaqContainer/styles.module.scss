@@ -5,11 +5,33 @@
 	justify-content: flex-start;
 	align-items: center;
 	flex-direction: column;
+	margin-top: -80px;
+
+	&-gradient-container {
+		text-align: center;
+		height: 80px;
+		width: 428px;
+		background: linear-gradient(
+			180deg,
+			#e59b86 0%,
+			rgba(229, 155, 134, 0) 100%
+		);
+		opacity: 0.4;
+		filter: blur(77px);
+		margin: auto;
+		margin-bottom: 0;
+		// margin-top: 115px;
+	}
 
 	&-title {
-		width: 100%;
-		padding: 24px 0;
-		border-bottom: 1px solid rgba(22, 38, 46, 0.2);
+		margin-top: -100px;
+		text-align: center;
+		color: white;
+		font-size: 60px;
+		font-style: normal;
+		line-height: normal;
+		mix-blend-mode: difference;
+		margin-bottom: 104px;
 	}
 
 	&-container {
@@ -26,10 +48,16 @@
 		width: 100%;
 		display: flex;
 		justify-content: flex-start;
-		align-items: center;
+		align-items: flex-start;
 		flex-direction: column;
+		align-self: stretch;
+
 		gap: 4px;
-		border-bottom: 1px solid rgba(22, 38, 46, 0.2);
+		border-radius: 16px;
+		padding: 24px 40px;
+
+		border: 0.5px solid rgba(255, 255, 255, 0.7);
+		// border-bottom: 1px solid rgba(22, 38, 46, 0.2);
 
 		&-title {
 			width: 100%;
@@ -51,6 +79,17 @@
 			height: 0;
 			padding: 0 16px;
 			overflow: hidden;
+		}
+
+		&--active {
+			background: linear-gradient(
+				180deg,
+				rgba(255, 255, 255, 0.2) -10.52%,
+				rgba(255, 255, 255, 0) 108.5%
+			);
+			box-shadow:
+				8px 8px 24px 0px rgba(255, 255, 255, 0.05) inset,
+				-8px -8px 24px 0px rgba(255, 255, 255, 0.05) inset;
 		}
 
 		&--active &-title svg {
