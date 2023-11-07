@@ -4,8 +4,10 @@ import { stylesConfig } from "@/utils/functions";
 import { Typography } from "@/library";
 import { StaticImageData } from "next/image";
 import Image from "next/image";
-import { IThreadsDataType } from "@/types/threads";
+import { IThreadsDataType } from "@/types/Threads";
 import { AiOutlineTwitter, AiOutlineHeart } from "react-icons/ai";
+import { FaRegComments } from "react-icons/fa";
+import exImg from "@/public/images/exImg.png";
 
 const classes = stylesConfig(styles, "threads-card-container");
 
@@ -17,6 +19,7 @@ interface ThreadsCardProps extends IThreadsDataType {
 	title: string;
 	desc: string;
 	hashtag: string;
+	imgPresent: boolean;
 	likes: string;
 	comments: string;
 	color: string;
@@ -35,6 +38,7 @@ const ThreadsCard: React.FC<ThreadsCardProps> = ({
 	hashtag,
 	likes,
 	comments,
+	imgPresent,
 	color,
 	border,
 	background,
@@ -133,6 +137,9 @@ const ThreadsCard: React.FC<ThreadsCardProps> = ({
 						{hashtag}
 					</Typography>
 				</div>
+				{imgPresent == true && (
+					<Image src={exImg} alt="img" width={300} />
+				)}
 				<div className={classes("-likes-comments")}>
 					<span className={classes("-likes-comments-content")}>
 						<AiOutlineHeart
@@ -152,7 +159,7 @@ const ThreadsCard: React.FC<ThreadsCardProps> = ({
 						</Typography>
 					</span>
 					<span className={classes("-likes-comments-content")}>
-						<AiOutlineHeart
+						<FaRegComments
 							style={{
 								color: "white",
 							}}
@@ -165,7 +172,7 @@ const ThreadsCard: React.FC<ThreadsCardProps> = ({
 							style={{ color: color }}
 							className={classes("-likes")}
 						>
-							{likes}
+							{comments}
 						</Typography>
 					</span>
 				</div>

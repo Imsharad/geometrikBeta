@@ -25,8 +25,8 @@ const ThreadsContainer = () => {
 					</Typography>
 				</div>
 				<div className={classes("-cards-container")}>
-					{/* <Responsive.Row className={classes("-cards-items")}> */}
-					{/* {testimonialData.map((testimonial, index) => (
+					<Responsive.Row className={classes("-cards-items")}>
+						{threadsData.map((thread, index) => (
 							<Responsive.Col
 								xlg={31}
 								lg={31}
@@ -34,25 +34,26 @@ const ThreadsContainer = () => {
 								sm={47}
 								xsm={47}
 								key={index}
-							> */}
-					<ThreadsCard
-						avatar={threadsData[0].avatar}
-						name={threadsData[0].name}
-						handle={threadsData[0].handle}
-						date={threadsData[0].date}
-						title={threadsData[0].title}
-						desc={threadsData[0].desc}
-						hashtag={threadsData[0].hashtag}
-						likes={threadsData[0].likes}
-						comments={threadsData[0].comments}
-						color={threadsData[0].color}
-						border={threadsData[0].border}
-						background={threadsData[0].background}
-						boxShadow={threadsData[0].boxShadow}
-					/>
-					{/* </Responsive.Col>
-						))} */}
-					{/* </Responsive.Row> */}
+							>
+								<ThreadsCard
+									avatar={thread.avatar}
+									name={thread.name}
+									handle={thread.handle}
+									date={thread.date}
+									title={thread.title}
+									desc={thread.desc}
+									hashtag={thread.hashtag}
+									imgPresent={thread.imgPresent}
+									likes={thread.likes}
+									comments={thread.comments}
+									color={thread.color}
+									border={thread.border}
+									background={thread.background}
+									boxShadow={thread.boxShadow}
+								/>
+							</Responsive.Col>
+						))}
+					</Responsive.Row>
 				</div>
 			</div>
 		</>

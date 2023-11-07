@@ -8,6 +8,7 @@ export interface IThreadsDataType {
 	title: string;
 	desc: string;
 	hashtag: string;
+	imgPresent: boolean;
 	likes: string;
 	comments: string;
 	color: string;
