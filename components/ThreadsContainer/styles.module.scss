@@ -2,8 +2,9 @@
 @import "@/styles/config/typography";
 
 .threads-container {
-	width: 91%;
+	width: 85%;
 	text-align: center;
+	margin: auto;
 
 	@include responsive(phone) {
 		width: 92%;
@@ -46,5 +47,27 @@
 
 	&-cards-container {
 		margin-top: 40px;
+	}
+
+	&-threads-hr {
+		text-align: center;
+		width: 800px;
+		height: 2px;
+		border: none;
+		margin: auto;
+		margin-top: 100px;
+		color: linear-gradient(
+			90deg,
+			rgba(105, 109, 96, 0.01) 0%,
+			#696d60 47.4%,
+			rgba(105, 109, 96, 0) 100%
+		);
+		opacity: 0.6;
+		background: linear-gradient(
+			90deg,
+			rgba(229, 155, 134, 0.01) 0%,
+			#e59b86 47.4%,
+			rgba(229, 155, 134, 0) 100%
+		);
 	}
 }

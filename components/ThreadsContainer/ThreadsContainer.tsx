@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import { stylesConfig } from "@/utils/functions";
-import { Button, Typography } from "@/library";
+import { Typography } from "@/library";
 import Responsive from "@/layouts/Responsive";
 import threadsData from "@/data/threadsData";
 import ThreadsCard from "../ThreadsCard/ThreadsCard";
@@ -55,6 +55,8 @@ const ThreadsContainer = () => {
 						))}
 					</Responsive.Row>
 				</div>
+
+				<hr className={classes("-threads-hr")} />
 			</div>
 		</>
 	);
