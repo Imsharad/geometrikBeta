@@ -47,13 +47,29 @@ const WhyUsContainer = () => {
 						<Responsive.Col
 							xlg={100}
 							lg={100}
-							md={100}
+							md={33}
 							sm={100}
 							xsm={100}
 							// key={index}
 						>
 							<WhyUsCard1 />
+						</Responsive.Col>
+						<Responsive.Col
+							xlg={100}
+							lg={100}
+							md={33}
+							sm={100}
+							xsm={100}
+						>
 							<WhyUsCard2 />
+						</Responsive.Col>
+						<Responsive.Col
+							xlg={100}
+							lg={100}
+							md={33}
+							sm={100}
+							xsm={100}
+						>
 							<WhyUsCard3 />
 						</Responsive.Col>
 					</Responsive.Row>
@@ -61,12 +77,20 @@ const WhyUsContainer = () => {
 						<Responsive.Col
 							xlg={100}
 							lg={100}
-							md={100}
+							md={49}
 							sm={100}
 							xsm={100}
 							// key={index}
 						>
 							<WhyUsCard4 />
+						</Responsive.Col>
+						<Responsive.Col
+							xlg={100}
+							lg={100}
+							md={49}
+							sm={100}
+							xsm={100}
+						>
 							<WhyUsCard5 />
 						</Responsive.Col>
 					</Responsive.Row>
