@@ -31,7 +31,7 @@ const TestimonialsContainer: React.FC = () => {
 							<Responsive.Col
 								xlg={31}
 								lg={31}
-								md={31}
+								md={30}
 								sm={47}
 								xsm={47}
 								key={index}
