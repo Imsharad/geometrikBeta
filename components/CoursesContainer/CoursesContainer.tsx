@@ -36,7 +36,7 @@ const CoursesContainer: React.FC = () => {
 							<Responsive.Col
 								xlg={48}
 								lg={48}
-								md={48}
+								md={33}
 								sm={100}
 								xsm={100}
 								// key={index}
@@ -53,7 +53,7 @@ const CoursesContainer: React.FC = () => {
 							<Responsive.Col
 								xlg={48}
 								lg={48}
-								md={48}
+								md={33}
 								sm={100}
 								xsm={100}
 							>
@@ -69,7 +69,7 @@ const CoursesContainer: React.FC = () => {
 							<Responsive.Col
 								xlg={48}
 								lg={48}
-								md={48}
+								md={33}
 								sm={100}
 								xsm={100}
 							>
@@ -85,7 +85,7 @@ const CoursesContainer: React.FC = () => {
 							<Responsive.Col
 								xlg={48}
 								lg={48}
-								md={48}
+								md={33}
 								sm={100}
 								xsm={100}
 							>
@@ -102,7 +102,7 @@ const CoursesContainer: React.FC = () => {
 							<Responsive.Col
 								xlg={48}
 								lg={48}
-								md={48}
+								md={33}
 								sm={100}
 								xsm={100}
 							>
@@ -119,7 +119,7 @@ const CoursesContainer: React.FC = () => {
 							<Responsive.Col
 								xlg={48}
 								lg={48}
-								md={48}
+								md={33}
 								sm={100}
 								xsm={100}
 							>

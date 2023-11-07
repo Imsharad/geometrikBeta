@@ -22,10 +22,18 @@
 		margin: auto;
 		margin-bottom: 0;
 		// margin-top: 115px;
+
+		@include responsive(phone) {
+			background: linear-gradient(
+				0deg,
+				#04d9ff 0%,
+				rgba(255, 255, 255, 0) 100%
+			);
+		}
 	}
 
 	&-container {
-		width: 88%;
+		width: 92%;
 		margin: auto;
 		display: flex;
 		flex-direction: column;
@@ -48,7 +56,7 @@
 	}
 
 	&-cards-items {
-		gap: 40px 0;
+		// gap: 40px 0;
 	}
 
 	&-courses-hr {
