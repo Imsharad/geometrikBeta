@@ -46,7 +46,7 @@ const WhyUsContainer = () => {
 					<Responsive.Row className={classes("-cards-items-1")}>
 						<Responsive.Col
 							xlg={100}
-							lg={100}
+							lg={33}
 							md={33}
 							sm={100}
 							xsm={100}
@@ -56,7 +56,7 @@ const WhyUsContainer = () => {
 						</Responsive.Col>
 						<Responsive.Col
 							xlg={100}
-							lg={100}
+							lg={33}
 							md={33}
 							sm={100}
 							xsm={100}
@@ -65,7 +65,7 @@ const WhyUsContainer = () => {
 						</Responsive.Col>
 						<Responsive.Col
 							xlg={100}
-							lg={100}
+							lg={33}
 							md={33}
 							sm={100}
 							xsm={100}
@@ -76,7 +76,7 @@ const WhyUsContainer = () => {
 					<Responsive.Row className={classes("-cards-items-2")}>
 						<Responsive.Col
 							xlg={100}
-							lg={100}
+							lg={45}
 							md={49}
 							sm={100}
 							xsm={100}
@@ -86,7 +86,7 @@ const WhyUsContainer = () => {
 						</Responsive.Col>
 						<Responsive.Col
 							xlg={100}
-							lg={100}
+							lg={45}
 							md={49}
 							sm={100}
 							xsm={100}

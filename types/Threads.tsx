@@ -11,6 +11,7 @@ export interface IThreadsDataType {
 	imgPresent: boolean;
 	likes: string;
 	comments: string;
+	height: string;
 	color: string;
 	border: string;
 	background: string;

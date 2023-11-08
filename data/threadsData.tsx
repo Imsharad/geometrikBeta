@@ -14,6 +14,7 @@ const threadsData: IThreadsDataType[] = [
 		likes: "7.5K",
 		comments: "7.5K",
 		color: "#E59B86",
+		height: "331px",
 		border: "0.5px solid #442525",
 		background:
 			"linear-gradient(180deg, rgba(68, 37, 37, 0.20) 0.03%, rgba(68, 37, 37, 0.00) 108.52%)",
@@ -33,6 +34,7 @@ const threadsData: IThreadsDataType[] = [
 		comments: "7.5K",
 		color: "#7DE1B5",
 		imgPresent: true,
+		height: "500px",
 		border: "0.5px solid #275B44",
 		background:
 			"linear-gradient(180deg, rgba(39, 91, 68, 0.20) 0.03%, rgba(39, 91, 68, 0.00) 108.52%)",
@@ -51,6 +53,7 @@ const threadsData: IThreadsDataType[] = [
 		likes: "7.5K",
 		comments: "7.5K",
 		color: "#AFB79E",
+		height: "331px",
 		border: "0.5px solid #696D60",
 		background:
 			"linear-gradient(180deg, rgba(105, 109, 96, 0.20) 0.03%, rgba(105, 109, 96, 0.00) 108.52%)",
@@ -69,6 +72,7 @@ const threadsData: IThreadsDataType[] = [
 		likes: "7.5K",
 		comments: "7.5K",
 		color: "#8D93D4",
+		height: "331px",
 		border: "0.5px solid #3A3E6F",
 		background:
 			"linear-gradient(180deg, rgba(58, 62, 111, 0.20) 0.03%, rgba(58, 62, 111, 0.00) 108.52%)",
@@ -86,6 +90,7 @@ const threadsData: IThreadsDataType[] = [
 		imgPresent: false,
 		likes: "7.5K",
 		comments: "7.5K",
+		height: "331px",
 		color: "#8D93D4",
 		border: "0.5px solid #3A3E6F",
 		background:

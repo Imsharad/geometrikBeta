@@ -23,6 +23,7 @@ interface ThreadsCardProps extends IThreadsDataType {
 	likes: string;
 	comments: string;
 	color: string;
+	height: string;
 	border: string;
 	background: string;
 	boxShadow: string;
@@ -40,6 +41,7 @@ const ThreadsCard: React.FC<ThreadsCardProps> = ({
 	comments,
 	imgPresent,
 	color,
+	height,
 	border,
 	background,
 	boxShadow,
@@ -52,6 +54,7 @@ const ThreadsCard: React.FC<ThreadsCardProps> = ({
 					border: border,
 					background: background,
 					boxShadow: boxShadow,
+					height: height,
 				}}
 			>
 				<div className={classes("-threads-header")}>
