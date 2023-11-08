@@ -32,7 +32,7 @@
 	&-top-gradient {
 		content: "";
 		position: absolute;
-		top: 0;
+		top: -100px;
 		right: 0;
 		width: 50%;
 		height: 50%;
@@ -41,8 +41,8 @@
 			rgba(255, 139, 93, 0.6) 4.71%,
 			rgba(242, 181, 68, 0.6) 127.25%
 		);
-		opacity: 0.4;
-		filter: blur(300px);
+		opacity: 0.3;
+		filter: blur(200px);
 
 		// @include responsive (phone) {
 		// 	display: none;
@@ -356,6 +356,7 @@
 		);
 		opacity: 0.4;
 		filter: blur(332.5px);
+		// filter: blur(0px);
 
 		// @include responsive (phone) {
 		// 	display: none;
@@ -367,6 +368,7 @@
 		position: absolute;
 		bottom: 0;
 		right: 0;
+		// top: -10px;
 		width: 50%;
 		height: 50%;
 		background: linear-gradient(
@@ -376,6 +378,7 @@
 		);
 		opacity: 0.4;
 		filter: blur(332.5px);
+		// filter: blur(0px);
 
 		// @include responsive (phone) {
 		// 	display: none;
