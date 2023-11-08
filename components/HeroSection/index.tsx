@@ -26,10 +26,27 @@ const HeroSection = () => {
 	useEffect(() => {
 		const interval = setInterval(() => {
 			shuffleLeft();
-		}, 3000);
+		}, 10000);
 
 		return () => clearInterval(interval);
 	}, [setDomains]);
+
+	const fadeUpVariants = {
+		initial: {
+			y: 50, // start 50 pixels down from the final position
+			opacity: 0,
+		},
+		animate: {
+			y: 0, // animate to the final position
+			opacity: 1,
+			transition: { duration: 1, ease: "easeOut" },
+		},
+		exit: {
+			y: -50, // animate 50 pixels down as it exits
+			opacity: 0,
+			transition: { duration: 1, ease: "easeOut" },
+		},
+	};
 
 	return (
 		<>
@@ -118,11 +135,10 @@ const HeroSection = () => {
 							<AnimatePresence mode="popLayout" key={1}>
 								<motion.div
 									key={domain}
-									layout
-									initial={{ opacity: 0, scale: 0 }}
-									animate={{ opacity: 1, scale: 1 }}
-									exit={{ opacity: 0, scale: 0 }}
-									transition={{ duration: 0.5 }}
+									initial="initial"
+									animate="animate"
+									exit="exit"
+									variants={fadeUpVariants}
 									className={classes("-carousel-items")}
 								>
 									<Typography
