@@ -34,8 +34,8 @@ const CoursesContainer: React.FC = () => {
 						<Responsive.Row className={classes("-cards-items")}>
 							{/* {CourseData.map((courses, index) => ( */}
 							<Responsive.Col
-								xlg={33}
-								lg={33}
+								xlg={32}
+								lg={32}
 								md={32}
 								sm={100}
 								xsm={100}
@@ -51,8 +51,8 @@ const CoursesContainer: React.FC = () => {
 								/>
 							</Responsive.Col>
 							<Responsive.Col
-								xlg={33}
-								lg={33}
+								xlg={32}
+								lg={32}
 								md={32}
 								sm={100}
 								xsm={100}
@@ -67,8 +67,8 @@ const CoursesContainer: React.FC = () => {
 								/>
 							</Responsive.Col>
 							<Responsive.Col
-								xlg={33}
-								lg={33}
+								xlg={32}
+								lg={32}
 								md={32}
 								sm={100}
 								xsm={100}
@@ -83,8 +83,8 @@ const CoursesContainer: React.FC = () => {
 								/>
 							</Responsive.Col>
 							<Responsive.Col
-								xlg={33}
-								lg={33}
+								xlg={32}
+								lg={32}
 								md={32}
 								sm={100}
 								xsm={100}
@@ -100,8 +100,8 @@ const CoursesContainer: React.FC = () => {
 							</Responsive.Col>
 
 							<Responsive.Col
-								xlg={33}
-								lg={33}
+								xlg={32}
+								lg={32}
 								md={32}
 								sm={100}
 								xsm={100}
@@ -117,8 +117,8 @@ const CoursesContainer: React.FC = () => {
 							</Responsive.Col>
 
 							<Responsive.Col
-								xlg={33}
-								lg={33}
+								xlg={32}
+								lg={32}
 								md={32}
 								sm={100}
 								xsm={100}

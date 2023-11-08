@@ -29,8 +29,8 @@ const TestimonialsContainer: React.FC = () => {
 					<Responsive.Row className={classes("-cards-items")}>
 						{testimonialData.map((testimonial, index) => (
 							<Responsive.Col
-								xlg={31}
-								lg={31}
+								xlg={30}
+								lg={30}
 								md={30}
 								sm={47}
 								xsm={47}
