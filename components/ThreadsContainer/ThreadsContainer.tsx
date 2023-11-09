@@ -5,6 +5,7 @@ import { Typography } from "@/library";
 import Responsive from "@/layouts/Responsive";
 import threadsData from "@/data/threadsData";
 import ThreadsCard from "../ThreadsCard/ThreadsCard";
+import Masonry from "@/layouts/Masonry/index";
 
 const classes = stylesConfig(styles, "threads-container");
 
@@ -35,24 +36,36 @@ const ThreadsContainer = () => {
 						// 	xsm={47}
 						// 	key={index}
 						// >
-						<ThreadsCard
-							key={index}
-							avatar={thread.avatar}
-							name={thread.name}
-							handle={thread.handle}
-							date={thread.date}
-							title={thread.title}
-							desc={thread.desc}
-							hashtag={thread.hashtag}
-							imgPresent={thread.imgPresent}
-							likes={thread.likes}
-							comments={thread.comments}
-							color={thread.color}
-							height={thread.height}
-							border={thread.border}
-							background={thread.background}
-							boxShadow={thread.boxShadow}
-						/>
+						// <Masonry
+						// 	xsm={1}
+						// 	sm={1}
+						// 	md={2}
+						// 	lg={3}
+						// 	xlg={4}
+						// 	key={index}
+						// >
+						<div className={classes("-thread-card")} key={index}>
+							<ThreadsCard
+								// key={index}
+								avatar={thread.avatar}
+								name={thread.name}
+								handle={thread.handle}
+								date={thread.date}
+								title={thread.title}
+								desc={thread.desc}
+								hashtag={thread.hashtag}
+								imgPresent={thread.imgPresent}
+								likes={thread.likes}
+								comments={thread.comments}
+								color={thread.color}
+								height={thread.height}
+								border={thread.border}
+								background={thread.background}
+								boxShadow={thread.boxShadow}
+							/>
+						</div>
+						// </Masonry>
+
 						// </Responsive.Col>
 					))}
 					{/* </Responsive.Row> */}
