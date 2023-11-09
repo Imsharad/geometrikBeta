@@ -1,3 +1,6 @@
+@import "@/styles/config/mixins";
+@import "@/styles/config/typography";
+
 .why-us-container {
 	width: 90%;
 	background: var(--black);
@@ -28,6 +31,10 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+
+		@include responsive(phone) {
+			width: 92%;
+		}
 	}
 
 	&-title-line {
@@ -37,6 +44,10 @@
 		font-style: normal;
 		line-height: normal;
 		mix-blend-mode: difference;
+
+		@include responsive(phone) {
+			font-size: 28px;
+		}
 	}
 
 	&-heading-desc {
@@ -46,11 +57,19 @@
 		text-align: center;
 		font-style: normal;
 		line-height: normal;
+
+		@include responsive(phone) {
+			display: none;
+		}
 	}
 
 	&-cards-container {
 		width: 100%;
 		margin-top: 80px;
+
+		@include responsive(phone) {
+			margin-top: 40px;
+		}
 	}
 
 	&-cards-item-1 {

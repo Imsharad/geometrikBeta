@@ -1,3 +1,6 @@
+@import "@/styles/config/mixins";
+@import "@/styles/config/typography";
+
 .home-faqs {
 	width: 100%;
 	padding: 120px 10%;
@@ -32,6 +35,11 @@
 		line-height: normal;
 		mix-blend-mode: difference;
 		margin-bottom: 104px;
+
+		@include responsive(phone) {
+			font-size: 24px;
+			margin-bottom: 14px;
+		}
 	}
 
 	&-container {
@@ -42,6 +50,10 @@
 		flex-direction: column;
 		gap: 12px;
 		margin-top: 24px;
+
+		@include responsive(phone) {
+			margin-top: 10px;
+		}
 	}
 
 	&-faq {
