@@ -47,10 +47,11 @@
 
 	&-cards-container {
 		margin-top: 40px;
-		column-count: 3;
-		column-gap: 1em;
+		// gap: 10px;
+		// column-count: 3;
+		// column-gap: 1em;
 
-		break-inside: avoid;
+		// break-inside: avoid;
 
 		@include responsive(phone) {
 			display: flex;
@@ -71,10 +72,10 @@
 	// 	margin-bottom: 1em; // Adjust the space between the cards
 	//   }
 	&-thread-card {
-		break-inside: avoid-column; // Prevents cards from splitting across columns
-		margin-bottom: 1em; // Space between the cards
-		page-break-inside: avoid; // For older browsers
-		-webkit-column-break-inside: avoid;
+		// break-inside: avoid-column; // Prevents cards from splitting across columns
+		// margin-bottom: 1em; // Space between the cards
+		// page-break-inside: avoid; // For older browsers
+		// -webkit-column-break-inside: avoid;
 	}
 
 	&-threads-hr {

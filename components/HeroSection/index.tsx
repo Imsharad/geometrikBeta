@@ -131,8 +131,8 @@ const HeroSection = () => {
 					</div>
 
 					<div className={classes("-domain-carousal-container")}>
-						{domains.map((domain) => (
-							<AnimatePresence mode="popLayout" key={1}>
+						{domains.map((domain, index) => (
+							<AnimatePresence mode="popLayout" key={index}>
 								<motion.div
 									key={domain}
 									initial="initial"

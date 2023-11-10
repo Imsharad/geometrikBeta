@@ -26,27 +26,10 @@ const ThreadsContainer = () => {
 					</Typography>
 				</div>
 				<div className={classes("-cards-container")}>
-					{/* <Responsive.Row className={classes("-cards-items")}> */}
-					{threadsData.map((thread, index) => (
-						// <Responsive.Col
-						// 	xlg={31}
-						// 	lg={31}
-						// 	md={31}
-						// 	sm={47}
-						// 	xsm={47}
-						// 	key={index}
-						// >
-						// <Masonry
-						// 	xsm={1}
-						// 	sm={1}
-						// 	md={2}
-						// 	lg={3}
-						// 	xlg={4}
-						// 	key={index}
-						// >
-						<div className={classes("-thread-card")} key={index}>
+					<Masonry xsm={1} sm={1} md={3} lg={3} xlg={4}>
+						{threadsData.map((thread, index) => (
 							<ThreadsCard
-								// key={index}
+								key={index}
 								avatar={thread.avatar}
 								name={thread.name}
 								handle={thread.handle}
@@ -63,11 +46,11 @@ const ThreadsContainer = () => {
 								background={thread.background}
 								boxShadow={thread.boxShadow}
 							/>
-						</div>
-						// </Masonry>
+						))}
+					</Masonry>
 
-						// </Responsive.Col>
-					))}
+					{/* // </Responsive.Col> */}
+
 					{/* </Responsive.Row> */}
 				</div>
 
