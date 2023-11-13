@@ -4,4 +4,6 @@ export interface IWhyUsDataType {
 	topImg: StaticImageData;
 	heading: string;
 	desc: string;
+	border: string;
+	background: string;
 }
