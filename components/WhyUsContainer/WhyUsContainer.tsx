@@ -97,9 +97,9 @@ const WhyUsContainer = () => {
 					<Responsive.Row>
 						{whyUsData.map((data, index) => (
 							<Responsive.Col
-								xlg={32}
-								lg={33}
-								md={32}
+								xlg={whyUsData.length - index <= 2 ? 50 : 33}
+								lg={whyUsData.length - index <= 2 ? 50 : 33}
+								md={whyUsData.length - index <= 2 ? 50 : 33}
 								sm={100}
 								xsm={100}
 								key={index}
@@ -110,6 +110,7 @@ const WhyUsContainer = () => {
 									desc={data.desc}
 									border={data.border}
 									background={data.background}
+									width={data.width}
 								/>
 							</Responsive.Col>
 						))}

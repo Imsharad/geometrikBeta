@@ -14,6 +14,7 @@ interface WhyUsCardProps extends IWhyUsDataType {
 	desc: string;
 	border: string;
 	background: string;
+	width: string;
 }
 
 const WhyUsCard: React.FC<WhyUsCardProps> = ({
@@ -22,6 +23,7 @@ const WhyUsCard: React.FC<WhyUsCardProps> = ({
 	desc,
 	border,
 	background,
+	width,
 }) => {
 	return (
 		<>
@@ -29,6 +31,7 @@ const WhyUsCard: React.FC<WhyUsCardProps> = ({
 				className={classes("")}
 				style={{
 					border: border,
+					width: width,
 				}}
 			>
 				<div

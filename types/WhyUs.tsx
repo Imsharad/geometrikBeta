@@ -6,4 +6,5 @@ export interface IWhyUsDataType {
 	desc: string;
 	border: string;
 	background: string;
+	width: string;
 }
