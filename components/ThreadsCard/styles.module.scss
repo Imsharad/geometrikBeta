@@ -1,15 +1,15 @@
 .threads-card-container {
+	margin: 10px;
 	width: 360px;
 	// height: 331px;
 	display: flex;
 	flex-direction: column;
-	// justify-content: center;
+
 	gap: 30px;
 	flex-shrink: 0;
 	padding: 20px;
 	text-align: left;
-	// border-radius: 20px;
-	// border: 0.5px solid var(--theme-primary);
+
 	border-radius: 20px;
 	border: 0.5px solid #3a3e6f;
 	background: linear-gradient(
