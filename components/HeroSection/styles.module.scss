@@ -1,5 +1,6 @@
 @import "@/styles/config/mixins";
 @import "@/styles/config/typography";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 .hero-section {
 	width: 100%;
@@ -247,7 +248,7 @@
 		// z-index: 1;
 		color: #fffbfb;
 		font-size: 65px;
-		font-family: Josefin Sans;
+		font-family: "Josefin Sans";
 		font-style: normal;
 		font-weight: 700;
 		line-height: normal;
@@ -320,8 +321,8 @@
 	}
 
 	&-btn-arrow {
-		width: 24px;
-		height: 24px;
+		// width: 24px;
+		// height: 24px;
 	}
 
 	&-hero-hr {
