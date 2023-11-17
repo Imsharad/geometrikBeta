@@ -5,26 +5,27 @@
 	width: 90%;
 	background: var(--black);
 	flex-shrink: 0;
-	margin-top: -150px;
+	// margin-top: -150px;
 
 	&-gradient-container {
 		text-align: center;
-		height: 80px;
-		width: 428px;
+		height: 60px;
+		width: 400px;
 		background: linear-gradient(
 			180deg,
 			#8d93d4 0%,
 			rgba(255, 255, 255, 0) 100%
 		);
 
-		opacity: 0.4;
 		filter: blur(77px);
 		margin: auto;
 		margin-bottom: 0;
-		// margin-top: 115px;
+		opacity: 1;
 	}
 
 	&-container {
+		position: relative;
+		top: -105px;
 		width: 88%;
 		margin: auto;
 		display: flex;

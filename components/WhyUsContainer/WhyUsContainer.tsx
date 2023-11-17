@@ -39,60 +39,6 @@ const WhyUsContainer = () => {
 					</Typography>
 				</div>
 
-				{/* <div className={classes("-cards-container")}>
-					<Responsive.Row className={classes("-cards-items-1")}>
-						<Responsive.Col
-							xlg={100}
-							lg={33}
-							md={33}
-							sm={100}
-							xsm={100}
-							// key={index}
-						>
-							<WhyUsCard1 />
-						</Responsive.Col>
-						<Responsive.Col
-							xlg={100}
-							lg={33}
-							md={33}
-							sm={100}
-							xsm={100}
-						>
-							<WhyUsCard2 />
-						</Responsive.Col>
-						<Responsive.Col
-							xlg={100}
-							lg={33}
-							md={33}
-							sm={100}
-							xsm={100}
-						>
-							<WhyUsCard3 />
-						</Responsive.Col>
-					</Responsive.Row>
-					<Responsive.Row className={classes("-cards-items-2")}>
-						<Responsive.Col
-							xlg={100}
-							lg={45}
-							md={49}
-							sm={100}
-							xsm={100}
-							// key={index}
-						>
-							<WhyUsCard4 />
-						</Responsive.Col>
-						<Responsive.Col
-							xlg={100}
-							lg={45}
-							md={49}
-							sm={100}
-							xsm={100}
-						>
-							<WhyUsCard5 />
-						</Responsive.Col>
-					</Responsive.Row>
-				</div> */}
-
 				<div className={classes("-cards-container")}>
 					<Responsive.Row>
 						{whyUsData.map((data, index) => (
