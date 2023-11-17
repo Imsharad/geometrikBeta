@@ -4,7 +4,7 @@
 	position: relative;
 	overflow: hidden;
 	width: 430px;
-	height: 580px;
+	height: 550px;
 	border-radius: 24px;
 	border: 1px solid rgba(102, 65, 54, 0.8);
 	background: rgba(102, 65, 54, 0.2);
@@ -113,6 +113,7 @@
 		color: transparent;
 		text-transform: capitalize;
 		mix-blend-mode: overlay;
+		opacity: 0.3;
 		-webkit-text-stroke-width: 0.5px;
 		-webkit-text-stroke-color: var(--white);
 	}
@@ -158,6 +159,7 @@
 
 	&-btn-container {
 		overflow: hidden;
+		margin-top: 5%;
 		width: fit-content;
 		display: flex;
 		flex-direction: row;
