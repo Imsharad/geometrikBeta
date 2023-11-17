@@ -40,7 +40,7 @@ const whyUsData: IWhyUsDataType[] = [
 		border: "0.5px solid #2F5565",
 		background:
 			"linear-gradient(180deg, rgba(0, 0, 0, 0.00) 58.54%, #09090B 100%), radial-gradient(152.66% 152.71% at 50% 44.26%, rgba(47, 85, 101, 0.00) 0%, #2F5565 100%)",
-		width: "550px",
+		width: "590px",
 	},
 	{
 		topImg: card5Img,
@@ -49,7 +49,7 @@ const whyUsData: IWhyUsDataType[] = [
 		border: "0.5px solid #664136",
 		background:
 			"linear-gradient(180deg, rgba(0, 0, 0, 0.00) 58.54%, #09090B 100%), radial-gradient(172.76% 172.68% at 50% 44.26%, rgba(102, 65, 54, 0.00) 0%, #664136 100%)",
-		width: "550px",
+		width: "590px",
 	},
 ];
 

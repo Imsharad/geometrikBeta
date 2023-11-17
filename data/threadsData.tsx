@@ -46,13 +46,15 @@ const threadsData: IThreadsDataType[] = [
 		handle: "@himanshupotdar11",
 		date: "12 Oct’23",
 		title: "📚🌟 Embracing the Digital Revolution in Education! 🌟📱",
-		desc: "Ed-tech is transforming the way we learn and teach. In this 5-tweet thread, let's explore the incredible impact of educational technology on students, educators, and the future of learning. 🧵 ",
+		desc: "Ed-tech is transforming the way we learn and teach. In this 5-tweet thread, let's explore the incredible impact of educational technology on students, educators, and the future of learning. 🧵 \
+		\n\n  \n \
+		 Ed-tech is transforming the way we learn and teach. In this 5-tweet thread, let's explore the incredible impact of educational technology on students, educators, and the future of learning. 🧵 ",
 		hashtag: "#EdTechRevolution",
 		likes: "7.5K",
 		comments: "7.5K",
 		color: "#7DE1B5",
 		imgPresent: true,
-		height: "500px",
+		height: "685px",
 		border: "0.5px solid #275B44",
 		background:
 			"linear-gradient(180deg, rgba(39, 91, 68, 0.20) 0.03%, rgba(39, 91, 68, 0.00) 108.52%)",
