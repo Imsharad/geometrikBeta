@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { stylesConfig } from "@/utils/functions";
-import styles from "./styles.module.scss";
 import { Button, Typography } from "@/library";
 import rocketImg from "@/public/icons/rocket.svg";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { BsArrowRightShort } from "react-icons/bs";
+import styles from "./styles.module.scss";
 
 const classes = stylesConfig(styles, "hero-section");
 
