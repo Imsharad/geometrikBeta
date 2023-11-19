@@ -167,7 +167,7 @@
 
 	&-btn-container {
 		overflow: hidden;
-		margin-top: 9%;
+		margin-top: 1%;
 		width: fit-content;
 		display: flex;
 		flex-direction: row;
@@ -178,6 +178,10 @@
 		background-color: #92cce564;
 		align-items: center;
 		justify-content: flex-start;
+
+		@include responsive(phone) {
+			margin-top: 9%;
+		}
 	}
 
 	&-arrow-icon {
