@@ -4,6 +4,7 @@ import { stylesConfig } from "@/utils/functions";
 import { Typography } from "@/library";
 import { ITestimonialDataType } from "@/types/Testimonials";
 import { StaticImageData } from "next/image";
+import cardImgBg from "@/public/images/card-img-bg.svg";
 import Image from "next/image";
 
 const classes = stylesConfig(styles, "testimonial-card-container");
@@ -38,11 +39,19 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
 				}}
 			>
 				<div className={classes("-testimonials-header")}>
-					<Image
-						src={avatar}
-						alt="Author-Img"
-						className={classes("-header-img")}
-					/>
+					<div className={classes("-img-container")}>
+						<Image
+							src={cardImgBg}
+							alt="bg-img"
+							className={classes("-img-bg")}
+						/>
+						<Image
+							src={avatar}
+							alt="Author-Img"
+							className={classes("-header-img")}
+						/>
+					</div>
+
 					<div className={classes("-header-contents")}>
 						<Typography
 							as="div"

@@ -32,8 +32,8 @@ const TestimonialsContainer: React.FC = () => {
 								xlg={30}
 								lg={30}
 								md={30}
-								sm={47}
-								xsm={47}
+								sm={100}
+								xsm={100}
 								key={index}
 							>
 								<TestimonialCard

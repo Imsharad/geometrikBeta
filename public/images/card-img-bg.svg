@@ -1,0 +1,7 @@
+<svg width="121" height="111" viewBox="0 0 121 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle opacity="0.5" cx="60" cy="50" r="40.5" stroke="white" stroke-opacity="0.5"/>
+<circle opacity="0.5" cx="60" cy="50" r="50.5" stroke="white" stroke-opacity="0.2"/>
+<g style="mix-blend-mode:overlay" opacity="0.5">
+<circle cx="60" cy="50" r="60.5" stroke="white"/>
+</g>
+</svg>

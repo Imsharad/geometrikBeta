@@ -2,6 +2,7 @@
 @import "@/styles/config/typography";
 
 .testimonial-card-container {
+	overflow: hidden;
 	width: 360px;
 	height: 212px;
 	display: flex;
@@ -27,16 +28,37 @@
 	&-testimonials-header {
 		display: flex;
 		flex-direction: row-reverse;
-		gap: 30px;
+		gap: 0;
+	}
+
+	&-img-container {
+		position: relative;
+		// width: 100%;
+		// height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&-img-bg {
+		position: relative;
+		width: 90px;
+		top: -28px;
+		right: -85px;
 	}
 
 	&-header-img {
+		position: relative;
+		top: -30px;
+		right: -10px;
 		width: 60px;
 		height: 60px;
 		flex-shrink: 0;
 	}
 
 	&-header-contents {
+		position: relative;
+		left: 70px;
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
@@ -80,6 +102,7 @@
 	}
 
 	&-testimonial-text {
+		margin-top: -13%;
 		text-transform: capitalize;
 	}
 }
