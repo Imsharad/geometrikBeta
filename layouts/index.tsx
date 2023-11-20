@@ -1,15 +1,13 @@
 import React from "react";
 import Seo from "./Seo";
 import { frontendBaseUrl } from "@/constants/variables";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 const Layout: React.FC<any> = ({ children }) => {
 	return (
 		<>
 			<Seo
-				title="NextJS Boilerplate"
-				description="NextJS Boilerplate with TypeScript, ESLint, Prettier, Jest, React Testing Library, SASS, and more."
+				title="Geometrik AI"
+				description="Accelerate your career with our online courses in leveraging chatGPT to become data scientist."
 				image="/images/og-image.png"
 				icons={["icon", "shortcut icon", "apple-touch-icon"].map(
 					(item) => {
@@ -24,16 +22,16 @@ const Layout: React.FC<any> = ({ children }) => {
 					card: "summary_large_image",
 					site: "@AthenasquareHQ",
 					author: "@AthenasquareHQ",
-					title: "NextJS Boilerplate",
+					title: "Geometrik AI",
 					description:
-						"NextJS Boilerplate with TypeScript, ESLint, Prettier, Jest, React Testing Library, SASS, and more.",
+						"Accelerate your career with our online courses in leveraging chatGPT to become data scientist.",
 					image: "/images/og-image.png",
 					url: frontendBaseUrl,
 				}}
 				og={{
-					title: "NextJS Boilerplate",
+					title: "Geometrik AI",
 					description:
-						"NextJS Boilerplate with TypeScript, ESLint, Prettier, Jest, React Testing Library, SASS, and more.",
+						"Accelerate your career with our online courses in leveraging chatGPT to become data scientist.",
 					images: [
 						{
 							url: "/images/og-image.png",
@@ -41,12 +39,12 @@ const Layout: React.FC<any> = ({ children }) => {
 							type: "image/png",
 							width: 1200,
 							height: 630,
-							alt: "NextJS Boilerplate",
+							alt: "Geometrik AI",
 						},
 					],
 					url: frontendBaseUrl,
 					type: "website",
-					siteName: "NextJS Boilerplate",
+					siteName: "Geometrik AI",
 				}}
 			/>
 			{/* <Header /> */}
